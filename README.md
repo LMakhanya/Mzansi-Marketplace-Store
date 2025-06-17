@@ -4,7 +4,7 @@ Welcome to **Mzansi Marketplace**, South Africa’s modern e-commerce platform c
 
 ## 🌍 What is Mzansi Marketplace?
 
-Mzansi Marketplace is a web and mobile-based platform that allows South African buyers to browse, order, and pay for goods sold by local vendors. With secure payment gateways (Yoco & Flutterwave), real-time notifications, and WhatsApp alerts, shopping online has never felt more local and connected.
+Mzansi Marketplace is a web and mobile-based platform that allows South African buyers to browse, order, and pay for goods sold by local vendors. With secure payment gateways (Yoco), real-time notifications, and WhatsApp alerts, shopping online has never felt more local and connected.
 
 ## 📱 Buyer Features
 
@@ -15,7 +15,7 @@ Mzansi Marketplace is a web and mobile-based platform that allows South African 
 
 ### 🛒 Seamless Checkout
 - Add items to your cart and place orders in just a few clicks.
-- Multiple payment options available via **Yoco** (card) and **Flutterwave** (bank transfer, mobile money).
+- Multiple payment options available via **Yoco** (card, bank transfer, mobile money).
 
 ### 📦 Order Tracking
 - Receive WhatsApp and email notifications on every order step.
@@ -36,9 +36,6 @@ Mzansi Marketplace is a web and mobile-based platform that allows South African 
   - Delivery confirmations
 - Email confirmations and invoices after checkout
 
-## 📲 Mobile App
-Mzansi Marketplace is also available as a mobile app (iOS and Android), built using **FlutterFlow** for a smooth and responsive shopping experience.
-
 > You can shop anytime, anywhere.
 
 ## ✅ How to Get Started
@@ -51,11 +48,10 @@ Mzansi Marketplace is also available as a mobile app (iOS and Android), built us
 6. **Leave a review to support local sellers!**
 
 ## 🚀 Technology Behind the Platform (for curiosity)
-- **Frontend**: PHP, JavaScript, FlutterFlow (mobile app)
+- **Frontend**: PHP, JavaScript (mobile app)
 - **Backend**: MySQL, Custom PHP APIs
-- **Payments**: Yoco API, Flutterwave API
+- **Payments**: Yoco API
 - **Notifications**: WhatsApp integration, Email alerts
-- **Admin Monitoring**: Laravel Super Admin Panel
 
 ## 👥 Community & Trust
 We prioritize trust by:
@@ -66,4 +62,3 @@ We prioritize trust by:
 ---
 
 Thank you for supporting South African businesses through Mzansi Marketplace! 🇿🇦
-
