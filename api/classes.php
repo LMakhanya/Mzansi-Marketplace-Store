@@ -6,6 +6,10 @@ include $_SERVER["DOCUMENT_ROOT"] . '/vendor/phpmailer/phpmailer/src/SMTP.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+$projectRoot = realpath($_SERVER["DOCUMENT_ROOT"] . '/../'); // one level up
+$dotenv = Dotenv\Dotenv::createImmutable($projectRoot);
+$dotenv->load();
+
 class Order
 {
     function getCarddetails($card_id)
@@ -175,12 +179,12 @@ class Registration
 }
 
 $smtpData = [
-    'host' => 'themzansimarketplace.co.za',
+    'host' => $_ENV['SMTP_HOST'],
     'SMTPAuth' => true,
-    'username' => 'noreply@themzansimarketplace.co.za',
-    'password' => 'KyyEDh^FJ%1pD-e1',
-    'secure' => 'ssl',
-    'port' => 465
+    'username' =>  $_ENV['SMTP_USERNAME'],
+    'password' =>  $_ENV['SMTP_PASSWORD'],
+    'secure' =>  $_ENV['SMPT_SECURE'],
+    'port' =>  $_ENV['SMPT_PORT']
 ];
 
 class SendEmail
