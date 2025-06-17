@@ -1,0 +1,172 @@
+/* Store Header Styles */
+.seller-header-container {
+    background: linear-gradient(to right, #d35400, #e67e22, #f39c12);
+    color: white;
+    padding: 6rem .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1,
+    p {
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .slogan {
+        font-size: .75rem;
+        font-weight: bold;
+    }
+    
+    .tagline {
+        font-size: .9rem;
+        position: relative;
+        z-index: 2;
+        opacity: 0.9;
+    }
+
+    .logo-container {
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+        max-width: 150px;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+/* Tabs Styles */
+.tabs-container {
+/*     margin: 3rem 0; */
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1e3a8a;
+    background: #e5e7eb;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background: #d1d5db;
+}
+
+.tab-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.tab-content {
+    background: var(--white);
+    border-radius: 15px;
+}
+
+.tab-pane {
+    display: none;
+    background-color: var(--white);
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 2rem;
+    letter-spacing: 0.025em;
+}
+
+.tab-pane ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tab-pane ul li {
+    font-size: 1.05rem;
+    color: #4b5563;
+    margin-bottom: 1.25rem;
+    padding: 1rem 1rem 2rem 2rem;
+    /* Increased bottom padding for date */
+    position: relative;
+    background: #f8fafc;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.tab-pane ul li:hover {
+    background: #eef2ff;
+    transform: translateX(2px);
+}
+
+.tab-pane ul li::before {
+    content: '★';
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0.75rem;
+    top: 1rem;
+    /* Adjusted for multi-line content */
+}
+
+.tab-pane .date {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-style: italic;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2rem;
+    /* Aligned with content */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .business-details h2 {
+        font-size: 1.8rem;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1.5rem;
+    }
+}

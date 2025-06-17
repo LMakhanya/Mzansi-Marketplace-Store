@@ -1,0 +1,74 @@
+.hero {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.trial-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.trial-header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.trial-header p {
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.cta-container {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1em;
+    }
+}
+
+/* Testimonials */
+.testimonials {
+    margin-top: 60px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: .8rem;
+    color: #4a5e7a;
+    margin: 0 0 15px;
+}
+
+.testimonial-card span {
+    font-size: .8rem;
+    font-weight: 600;
+    color: #2c3e50;
+}

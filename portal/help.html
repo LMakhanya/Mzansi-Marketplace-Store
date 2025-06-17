@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/themzansi_logo.png" />
+    <title>Mzansi Marketplace - Seller Help Center</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/tailwind.css">
+    <link rel="stylesheet" href="/styles/output.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .faq-question {
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            display: none;
+        }
+
+        .faq-question.active .faq-answer {
+            display: block;
+        }
+
+        .faq-question.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        .search-container input {
+            width: 100%;
+            max-width: 800px;
+            padding: 0.9rem 1.5rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1rem;
+            background: #f8fafc;
+            transition: all 0.3s ease;
+        }
+
+        .search-container input:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+            outline: none;
+        }
+
+        .tab {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .tab.t-btn.active,
+        .tab.t-btn:hover {
+            background-color: #f97316;
+            color: white;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            background-color: #888;
+            color: white;
+            border-radius: 50%;
+            font-size: 0.9rem;
+        }
+
+        .step-title {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #222;
+        }
+
+        .step-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 6px;
+        }
+
+        .step img {
+            width: 100%;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        img {
+            border: 1px solid lightgrey;
+        }
+
+
+        .step-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .step {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .step-content {
+                flex: 1;
+                padding-right: 20px;
+            }
+
+            .step img {
+                width: 100%;
+                max-width: 45vw;
+                height: auto;
+                object-fit: contain;
+                border-radius: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans flex max-h-screen ">
+
+    <!-- Main Content -->
+    <div id="main-content" class="overflow-y-auto flex-1 content-expanded">
+        <!-- Top Navigation -->
+        <header class="bg-white shadow-sm sticky top-0">
+            <div class="flex justify-between items-center px-6 py-4">
+                <div class="flex gap-x-3 items-center">
+                    <h1 class="text-xl font-bold text-gray-900">Seller Help Center</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-bell"></i>
+                        <span class="sr-only">Notifications</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-container flex justify-center p-4 bg-white border-b border-gray-200">
+            <input type="text" id="searchBar"
+                placeholder="Search help topics (e.g., 'add product', 'withdraw funds')..."
+                aria-label="Search help topics">
+        </div>
+
+        <!-- Main Content -->
+        <main class="p-0 md:p-6">
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h2 class="text-lg font-medium text-gray-900">Mzansi Marketplace Seller Help Center</h2>
+                </div>
+                <div class="p-2 md:p-6">
+
+                    <!-- Replace the Tabs Section -->
+                    <div class="flex border-b border-gray-200 mb-6">
+                        <button
+                            class="tab t-btn not-btn px-4 py-2 text-sm font-medium text-gray-700 hover:bg-orange-100 rounded-md active"
+                            aria-selected="true" role="tab" data-tab="getting-started">Help
+                            Center</button>
+                        <button
+                            class="tab t-btn px-4 py-2 text-sm font-medium text-gray-700 hover:bg-orange-100 rounded-md"
+                            data-tab="usage" aria-selected="false" role="tab">Product Listing</button>
+                        <button
+                            class="tab t-btn px-4 py-2 text-sm font-medium text-gray-700 hover:bg-orange-100 rounded-md"
+                            data-tab="privacy" aria-selected="false" role="tab">Inventory</button>
+                        <button
+                            class="tab t-btn px-4 py-2 text-sm font-medium text-gray-700 hover:bg-orange-100 rounded-md"
+                            data-tab="order-update" aria-selected="false" role="tab">Order Update</button>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <!-- <div class="mb-4">
+                        <h4 class="text-sm font-medium text-gray-900">Quick Links</h4>
+                        <ul class="flex flex-wrap gap-4 text-sm text-gray-700">
+                            <li><a href="#getting-started" class="tab underline hover:text-gray-600"
+                                    data-tab="usage">Getting Started</a>
+                            </li>
+                            <li><a href="#product-management" class="underline hover:text-gray-600">Product
+                                    Management</a></li>
+                            <li><a href="#order-management" class="underline hover:text-gray-600">Order Management</a>
+                            </li>
+                            <li><a href="#usage" class="underline hover:text-gray-600">Product Listing</a></li>
+                            <li><a href="#privacy" class="underline hover:text-gray-600">Inventory</a></li>
+                            <li><a href="#order-update" class="underline hover:text-gray-600">Order Update</a></li>
+                            <li><a href="#faqs" class="underline hover:text-gray-600">FAQs</a></li>
+                            <li><a href="#earnings" class="underline hover:text-gray-600">Earnings & Withdrawals</a>
+                            </li>
+                            <li><a href="#analytics" class="underline hover:text-gray-600">Analytics</a></li>
+                            <li><a href="#storefront" class="underline hover:text-gray-600">Storefront</a></li>
+                            <li><a href="#faqs" class="underline hover:text-gray-600">FAQs</a></li>
+                        </ul>
+                    </div> -->
+
+                    <!-- Getting Started -->
+                    <section id="getting-started" class="tab-content hidden">
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Getting Started</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Set Up Your Seller Account</h4>
+                                <p class="text-sm text-gray-700">Register via the Seller Portal, providing business
+                                    details, ID, and a selfie for verification. Choose a Basic or Pro plan to start
+                                    selling.</p>
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                                    alt="Seller registration interface"
+                                    class="w-full h-32 object-cover rounded-md mt-2">
+                            </div>
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Link Your Bank Account</h4>
+                                <p class="text-sm text-gray-700">Add a valid bank account in the Account Settings to
+                                    receive secure payouts via Yoco, encrypted with AES-256.</p>
+                                <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6"
+                                    alt="Bank account setup interface" class="w-full h-32 object-cover rounded-md mt-2">
+                            </div>
+                        </div>
+
+                        <!-- FAQs -->
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Frequently Asked Questions</h3>
+                        <div id="faqs" class="space-y-4">
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-sm font-medium text-gray-900">How do I sign up as a seller?</h4>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Visit the Seller Portal, complete the registration form with your business
+                                    details,
+                                    ID, and selfie, and choose a Basic or Pro plan. Verification takes 1–2 days.
+                                </div>
+                            </div>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-sm font-medium text-gray-900">How do I handle buyer disputes?
+                                    </h4>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Respond to buyer issues within 5 days via the Orders section. If unresolved,
+                                    escalate to support for mediation under the Consumer Protection Act.
+                                </div>
+                            </div>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-sm font-medium text-gray-900">Why is my withdrawal delayed?</h4>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Standard withdrawals (1–2 days) may be delayed by bank processing or holidays.
+                                    Immediate withdrawals are faster but incur a R10 fee. Check status in Payments.
+                                </div>
+                            </div>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-sm font-medium text-gray-900">How is my data protected?</h4>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    We use AES-256 encryption and comply with POPIA. Data is securely stored, and
+                                    breaches are reported within 72 hours with steps to protect your account.
+                                </div>
+                            </div>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-sm font-medium text-gray-900">Can I upgrade my plan?</h4>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Yes, upgrade to the Pro plan in Account Settings to access bulk uploads and
+                                    advanced
+                                    analytics. Downgrade or cancel anytime.
+                                </div>
+                            </div>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="text-sm font-medium text-gray-900">How do I comply with POPIA?</h4>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Obtain buyer consent before sharing data, keep records confidential, and report
+                                    breaches to support. Non-compliance, as in <em>SAPS (2023)</em>, risks
+                                    penalties.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Product Management -->
+                    <section id="product-management" class="tab-content hidden">
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Product Management</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-900">Add & Edit Products</h4>
+                                <p class="text-sm text-gray-600">Go to Listings in your Seller Panel to upload images,
+                                    set prices, write descriptions, and select categories. Ensure accuracy to comply
+                                    with the Consumer Protection Act (CPA).</p>
+                                <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf"
+                                    alt="Product upload interface" class="w-full h-48 object-cover rounded-md mt-2">
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-900">Manage Inventory</h4>
+                                <p class="text-sm text-gray-600">Track stock levels, toggle products active/inactive,
+                                    and receive low-stock alerts in the Inventory section.</p>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-900">Bulk Upload (Pro Plan)</h4>
+                                <p class="text-sm text-gray-600">Use CSV files or smart forms to upload multiple
+                                    products at once, saving time for large inventories.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Product Listing Tab -->
+                    <section id="usage" class="tab-content active">
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Product Listing</h3>
+                        <div class="space-y-4 text-sm text-gray-600">
+                            <p>Create and manage your product listings to attract buyers, ensuring compliance with the
+                                Consumer Protection Act (CPA).</p>
+                            <div class="bg-orange-50 rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">Add Products</h4>
+                                <p class="text-sm text-orange-700 mb-4">In the Listings section, create compelling
+                                    product listings by following these steps. Ensure accuracy to comply with the
+                                    Consumer Protection Act (CPA).</p>
+
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">1</div>
+                                            <div class="step-title">Select Categories</div>
+                                        </div>
+                                        <p class="step-description">Choose a parent category (e.g., Electronics) and a
+                                            subcategory (e.g., Smartphones) to help buyers find your product.</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/categories.png"
+                                        alt="Category selection interface">
+                                </div>
+
+                                <!-- Repeat Steps Below (Steps 2–9) by changing content accordingly -->
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">2</div>
+                                            <div class="step-title">Basic Information</div>
+                                        </div>
+                                        <p class="step-description">Enter the product name, brand, and a detailed
+                                            description. Include key features to attract buyers.</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/basic_info.png"
+                                        alt="Form interface for entering product name and description">
+                                </div>
+
+                                <!-- Step 3: Price and Quantity -->
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">3</div>
+                                            <div class="step-title">Price and Quantity</div>
+                                        </div>
+                                        <p class="step-description">Set a competitive price and specify available stock.
+                                            Enable low-stock alerts to avoid overselling.</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/price_quantity.png"
+                                        alt="Price and quantity input fields with stock alert toggle">
+                                </div>
+
+                                <!-- Step 4: Additional Notes -->
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">4</div>
+                                            <div class="step-title">Additional Notes</div>
+                                        </div>
+                                        <p class="step-description">Add optional notes, such as warranty details,
+                                            shipping info, or return policies, to inform buyers.</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/additional_notes.png"
+                                        alt="Text area for adding warranty and shipping notes">
+                                </div>
+
+                                <!-- Step 5: Visibility -->
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">5</div>
+                                            <div class="step-title">Visibility</div>
+                                        </div>
+                                        <p class="step-description">Choose whether the product is active (visible to
+                                            buyers) or inactive (hidden from your storefront).</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/visibility.png"
+                                        alt="Toggle switch for product visibility settings">
+                                </div>
+
+                                
+                                <!-- Step 6: Discount -->
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">6</div>
+                                            <div class="step-title">Discount</div>
+                                        </div>
+                                        <p class="step-description">Offer a discount by setting a reduced price or
+                                            percentage off to boost sales, optional for all listings.</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/discount.png"
+                                        alt="Discount input field with percentage and price options">
+                                </div>
+
+                                <!-- Step 7: Condition -->
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">7</div>
+                                            <div class="step-title">Condition</div>
+                                        </div>
+                                        <p class="step-description">Specify if the product is new, used, or refurbished.
+                                            Accurate condition details prevent disputes.</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/condition.png"
+                                        alt="Dropdown menu for selecting product condition">
+                                </div>
+
+                                <!-- Step 8: Product Image -->
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">8</div>
+                                            <div class="step-title">Product Image</div>
+                                        </div>
+                                        <p class="step-description">Upload high-quality images (up to 5) showcasing the
+                                            product from multiple angles. Images are key to buyer trust.</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/image_upload.png"
+                                        alt="Product image upload interface with multiple image slots">
+                                </div>
+
+                                <!-- Step 9: Optional Enhancements -->
+                                <div class="step">
+                                    <div class="step-content">
+                                        <div class="step-header">
+                                            <div class="step-number">9</div>
+                                            <div class="step-title">Optional Enhancements</div>
+                                        </div>
+                                        <p class="step-description">Use Pro plan features like promoted listings or bulk
+                                            uploads to increase visibility and streamline management.</p>
+                                    </div>
+                                    <img src="/portal/assets/imgs/help/opt-enh.png"
+                                        alt="Promoted listings and bulk upload options interface">
+                                </div>
+
+                            </div>
+
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Edit Listings</h4>
+                                <p>Update prices, descriptions, or images anytime via the Listings section to keep your
+                                    catalog fresh.</p>
+                            </div>
+                            <h4 class="text-sm font-medium text-gray-900">FAQs</h4>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h5 class="text-sm font-medium text-gray-900">How do I add a product?</h5>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Go to Listings, click “Add Product,” upload images, enter details, and save. Ensure
+                                    descriptions are accurate per CPA.
+                                </div>
+                            </div>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h5 class="text-sm font-medium text-gray-900">Why was my listing rejected?</h5>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Listings may be rejected for misleading details or prohibited items. Review our <a
+                                        href="/seller/terms-privacy" class="underline hover:text-gray-600">Terms</a>
+                                    and resubmit.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Inventory Tab -->
+                    <section id="privacy" class="tab-content hidden">
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Inventory</h3>
+                        <div class="space-y-4 text-sm text-gray-600">
+                            <p>Keep your stock levels organized to ensure smooth order fulfillment and avoid
+                                overselling.</p>
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Track Inventory</h4>
+                                <p>In the Inventory section, view stock levels, update quantities, and receive low-stock
+                                    alerts to restock in time.</p>
+                                <img src="/portal/assets/imgs/help/inventory.png" alt="Inventory management interface"
+                                    class="w-full h-auto object-fit rounded-md mt-2">
+                            </div>
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Toggle Availability</h4>
+                                <p>Use the action to update, delete or duplicate product/item.</p>
+                            </div>
+                            <h4 class="text-sm font-medium text-gray-900">FAQs</h4>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h5 class="text-sm font-medium text-gray-900">How do I update stock?</h5>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Go to Inventory, select a product, and adjust the stock quantity. Save to update
+                                    instantly.
+                                </div>
+                            </div>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h5 class="text-sm font-medium text-gray-900">What if I oversell?</h5>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Overselling may require refunds, impacting buyer trust. Enable low-stock alerts to
+                                    prevent this.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Order Update Tab -->
+                    <section id="order-update" class="tab-content hidden">
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Order Update</h3>
+                        <div class="space-y-4 text-sm text-gray-600">
+                            <p>Manage orders efficiently to keep buyers informed and ensure timely deliveries, per CPA
+                                requirements.</p>
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">View & Update Orders</h4>
+                                <p>In the Orders section, see pending, shipped, or completed orders. Update statuses
+                                    (e.g., “Shipped”) and notify buyers automatically.</p>
+                                <img src="/portal/assets/imgs/help/order.png"
+                                    alt="Order management dashboard" class="w-full h-auto object-fit rounded-md mt-2">
+                            </div>
+                          <!--   <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Handle Returns & Refunds</h4>
+                                <p>Process returns or refunds per your CPA-compliant policy. Respond to buyer requests
+                                    within 5 days to avoid disputes.</p>
+                            </div>
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Generate Invoices</h4>
+                                <p>Download invoices for orders to streamline bookkeeping and provide delivery proof.
+                                </p>
+                            </div> -->
+                            <h4 class="text-sm font-medium text-gray-900">FAQs</h4>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h5 class="text-sm font-medium text-gray-900">How do I update an order?</h5>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Go to Orders, select an order, and update its status (e.g., “Shipped”). Buyers are
+                                    notified instantly.
+                                </div>
+                            </div>
+                            <div class="faq-question border border-gray-200 rounded-lg p-4">
+                                <div class="flex justify-between items-center">
+                                    <h5 class="text-sm font-medium text-gray-900">How do I handle a dispute?</h5>
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </div>
+                                <div class="faq-answer mt-2 text-sm text-gray-600">
+                                    Respond to buyer issues within 5 days via Orders. Escalate to support for mediation
+                                    if unresolved.
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Support -->
+                    <section>
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Contact Support</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Email Support</h4>
+                                <p class="text-sm text-gray-700">
+                                    Email <a href="mailto:support@themzansimarketplace.co.za"
+                                        class="underline hover:text-gray-600">support@themzansimarketplace.co.za</a>.
+                                    Response within 24 hours.
+                                </p>
+                            </div>
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">WhatsApp Support</h4>
+                                <p class="text-sm text-gray-700">
+                                    Chat on <a href="https://wa.me/+27695352229"
+                                        class="underline hover:text-gray-600">+27 69 535 2229</a> (9 AM–5 PM SAST).
+                                </p>
+                            </div>
+                            <div class="rounded-lg p-4">
+                                <h4 class="text-sm font-medium text-gray-600 mb-2">Submit a Ticket</h4>
+                                <p class="text-sm text-gray-700">
+                                    Create a support ticket via the Seller Panel for priority assistance. Track
+                                    responses in your Dashboard.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Tab Switching
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.setAttribute('aria-selected', 'false');
+                    });
+                    tabContents.forEach(content => content.classList.add('hidden'));
+
+                    tab.classList.add('active');
+                    tab.setAttribute('aria-selected', 'true');
+                    document.getElementById(tab.dataset.tab).classList.remove('hidden');
+                });
+            });
+
+            // FAQ Toggle
+            const faqItems = document.querySelectorAll('.faq-question');
+            faqItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    faqItems.forEach(el => {
+                        el.classList.remove('active');
+                        el.setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isActive) {
+                        item.classList.add('active');
+                        item.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            // Search Functionality
+            const searchBar = document.getElementById('searchBar');
+            searchBar.addEventListener('input', () => {
+                const query = searchBar.value.toLowerCase().trim();
+                const sections = document.querySelectorAll('.tab-content, #faqs');
+                let hasVisibleContent = false;
+                sections.forEach(section => {
+                    const text = section.textContent.toLowerCase();
+                    const isVisible = query ? text.includes(query) : section.id === 'terms';
+                    section.hidden = !isVisible;
+                    if (isVisible) hasVisibleContent = true;
+                });
+                if (!hasVisibleContent && query) {
+                    document.querySelector('#terms').hidden = false; // Fallback to Help Center
+                }
+            });
+
+            // Sidebar Toggle for Mobile
+            const sidebarToggle = document.querySelector('.toggle-sm-sidebar');
+            const mainContent = document.querySelector('#main-content');
+            const sidebar = document.querySelector('aside');
+            if (sidebarToggle) {
+                sidebarToggle.addEventListener('click', () => {
+                    sidebar.classList.toggle('hidden');
+                    mainContent.classList.toggle('content-expanded');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<div class="overlay" id="actionOverlay" style="display: none;">
+    <div class="modal">
+        <button class="close-btn" id="closeActionModal">✕</button>
+        <div class="warning-icon">⚠️</div>
+        <h2 id="overlayTitle">Are you sure?</h2>
+        <p id="overlayMessage">This action cannot be undone.</p>
+        <div class="overlay-button-group">
+            <a href="#" class="btn-leave" id="confirmAction">Continue</a>
+            <a href="#" class="btn-cancel" id="cancelAction">Cancel</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Elements
+    const actionOverlay = document.getElementById('actionOverlay');
+    const overlayTitle = document.getElementById('overlayTitle');
+    const overlayMessage = document.getElementById('overlayMessage');
+    const confirmActionBtn = document.getElementById('confirmAction');
+    const cancelActionBtn = document.getElementById('cancelAction');
+    const closeActionModalBtn = document.getElementById('closeActionModal');
+
+    const logoutBtn = document.getElementById('regLogout');
+    const cancelRegistrationBtn = document.getElementById('cancelRegistration');
+    let actionInput = document.getElementById('actionInput');
+
+    let actionType = '';
+
+    // Function to show overlay with dynamic content
+    function showOverlay(type) {
+        actionType = type;
+
+        if (type === 'logout') {
+            overlayTitle.textContent = "Are you sure you want to leave?";
+            overlayMessage.textContent = "The info you entered may not be saved.";
+            confirmActionBtn.textContent = "Leave";
+            confirmActionBtn.setAttribute('data-action', '/assets/process/auth/logout.php');
+        } else if (type === 'cancelRegistration') {
+            overlayTitle.textContent = "Are you sure you want to cancel your registration?";
+            overlayMessage.textContent = "Please note that the next time you log in, you will be required to re-register or re-enter your store details.";
+            confirmActionBtn.textContent = "Continue";
+            confirmActionBtn.setAttribute('data-action', 'cancelRegistration');
+        }
+
+        actionOverlay.style.display = 'flex';
+    }
+
+    // Function to hide overlay
+    function hideOverlay() {
+        actionOverlay.style.display = 'none';
+        actionType = '';
+    }
+
+    // Handle confirm action button
+    confirmActionBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const action = confirmActionBtn.getAttribute('data-action');
+
+        if (action === '/assets/process/auth/logout.php') {
+            window.location.href = action;
+        } else if (action === 'cancelRegistration') {
+            actionInput.value = 'cancel';
+            actionInput.form.submit();
+        }
+    });
+
+    // Handle cancel and close modal
+    cancelActionBtn.addEventListener('click', hideOverlay);
+    closeActionModalBtn.addEventListener('click', hideOverlay);
+
+    // Attach event listeners to buttons
+    logoutBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        showOverlay('logout');
+    });
+
+    cancelRegistrationBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        showOverlay('cancelRegistration');
+    });
+</script>

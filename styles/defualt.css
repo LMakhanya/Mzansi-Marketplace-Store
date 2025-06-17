@@ -1,0 +1,611 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+:root {
+    --base-clr: #f1faffeb;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #808080;
+    --primary-color: #e67e22;
+    --text-color: #333;
+    --sec-text-color: #282727;
+    --bg-color-light: #d5d5d5;
+    --bg-color-dark: #11121a;
+    --border-color: #e68835;
+    --footer-bg: #333;
+    --footer-text-color: var(--white);
+    --bg-color: white;
+    --hover-color: #cf792d;
+    --white: white;
+    --black: black;
+
+    --btn_blue: #2b92af;
+    --red: #f13333;
+    --green: #2baf64;
+    --blue: #3b82f6;
+    --yellow: #f5c231;
+
+    --icon-color-light: white;
+    --icon-color-light-dark: white;
+
+    --color-light-dark: white;
+    --color-dark-light: #11121a;
+
+    --shadow: rgba(0, 0, 0, 0.1);
+
+    --hightlighter-color: #efefef;
+
+    /* Darker, richer blue for professionalism */
+    --secondary-color: #00aaff;
+    /* Brighter, modern accent blue */
+    --accent-color: #f8fafc;
+    /* Softer off-white for backgrounds */
+    --text-color: #2d3748;
+    /* Softer black for readability */
+    --error-color: #f56565;
+    /* Softer red for errors */
+    --success-color: #48bb78;
+    /* Modern green for success */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    /* 
+    background: linear-gradient(135deg, #e2e8f0 0%, #edf2f7 100%); */
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.p_col.one::-webkit-scrollbar,
+.mybody::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        cursor: pointer;
+        height: 60px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+            inset 0px 2px 5px rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        background-color: var(--primary-color);
+        height: 50px;
+        width: auto;
+        padding: 8px;
+    }
+}
+
+.store-logo {
+    position: absolute;
+    left: 100%;
+    top: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+    height: 40px;
+    width: auto;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+/* ********************* */
+.nested_list {
+    list-style: none;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+.current-menu {
+    background-color: #000000;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Style the input containers */
+.combo_field {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0px;
+    margin-bottom: 15px;
+
+    .form-group {
+        margin-bottom: 0px;
+        width: 100%;
+
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .combo_field {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: .9rem;
+    letter-spacing: .6px;
+    transition: border-color 0.3s ease;
+    padding-top: 25px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(246, 159, 59, 0.1);
+}
+
+.form-group label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 12px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding: 0 4px;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: 2px;
+    font-size: 11px;
+    color: #b1b1b1;
+    transform: translateY(0%);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    font-style: italic;
+    color: gray;
+    font-size: 0.65rem;
+    opacity: 0;
+}
+
+.form-group input:invalid:focus,
+.form-group textarea:invalid:focus {
+    border-color: #d11804;
+}
+
+/* Ensure placeholder remains visible when input is focused */
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    opacity: 1;
+}
+
+
+/* Radio Buttons */
+.radio-form-group {
+    margin-bottom: 20px;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Custom radio button inner circle */
+.radio-group input[type="radio"]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
+}
+
+/* Active radio button effect */
+.radio-group input[type="radio"]:checked {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 6px rgba(246, 181, 59, 0.5);
+}
+
+.radio-group input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
+.strength-bar {
+    height: 4px;
+    width: 0;
+    background: #ef4444;
+    border-radius: 2px;
+    margin-top: 8px;
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.match-message,
+.password-length-message {
+    font-size: .785rem;
+    margin-top: 0px;
+    display: none;
+}
+
+.match-message.success {
+    color: #22c55e;
+    display: block;
+}
+
+.match-message.error,
+.password-length-message.error {
+    color: #ef4444;
+    display: block;
+}
+
+.dropdown,
+.text-input,
+.textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #1f2937;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-input,
+.textarea {
+    width: calc(100% - 27px);
+}
+
+.dropdown:focus,
+.text-input:focus,
+.textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.dropdown {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"><path fill="%236B7280" d="M0 0h12L6 6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding: 16px 12px;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-transform: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Custom radio button inner circle */
+.radio-group input[type="radio"]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
+}
+
+/* Active radio button effect */
+.radio-group input[type="radio"]:checked {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 6px rgba(246, 181, 59, 0.5);
+}
+
+.radio-group input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
+.moveup {
+    position: fixed;
+    left: auto;
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    z-index: 50;
+    background-color: var(--primary-color);
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid var(--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease;
+    display: none;
+
+    i {
+        font-size: 25px;
+        color: white;
+    }
+}
+
+.moveup:active {
+    transform: scale(.95);
+}
+
+/* Loader styles */
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #292929;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1000;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: none;
+}
+
+/* ******************* Button Loader ****************** */
+.btn-loader {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+    padding: 8px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.i-btn.loading i {
+    display: none;
+}
+
+.i-btn.loading {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.empty-bag-message {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+
+    img {
+        opacity: 0.5;
+        /* 10% opacity */
+        box-shadow: none;
+        width: auto;
+        margin: auto;
+        height: 12vw;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: .8rem;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: .8rem;
+        text-decoration: none;
+        color: #2563eb;
+        cursor: pointer;
+    }
+
+    span {
+        opacity: 0.5;
+
+    }
+
+}
+
+/* Empty List */
+.empty-message-container {
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+    max-width: 850px;
+}
+
+.empty-image {
+    margin: auto;
+    max-width: 110px;
+}
+
+.empty-mssg {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.empty-subtext {
+    font-size: .6rem;
+    color: #666;
+}
+
+.empty-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: .8rem;
+    padding: 0.5rem 1.1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.empty-btn:active {
+    transform: scale(.95);
+}
+
+/* Empty List */

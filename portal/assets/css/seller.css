@@ -1,0 +1,254 @@
+.hero {
+    background-image: url('/assets/images/reg_bg.png');
+    object-fit: cover;
+    background-size: cover;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: #fff;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.step {
+    padding: 20px;
+    position: relative;
+
+    h4,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: .8rem;
+}
+
+.step h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.step p {
+    font-size: 16px;
+    color: #718096;
+}
+
+
+/* Seller Plans Section Start */
+.plans {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+.plan-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border: 1px solid #e0e0e0;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card.popular {
+    border: 2px solid var(--primary-color);
+}
+
+.plan-card.popular::before {
+    content: "Most Popular";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.plan-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: .2rem;
+    padding: 0;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.price {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    color: var(--primary-color);
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0rem;
+}
+
+.plan-card ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    font-size: .85rem;
+}
+
+.plan-card ul li span {
+    margin-right: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.plan-card ul li p {
+    margin: 0;
+    color: #555;
+}
+
+.plan-button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan-card:not(.popular) .plan-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.plan-card.popular .plan-button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.plan-card:not(.popular) .plan-button:hover {
+    background-color: var(--hover-color);
+}
+
+.plan-card.popular .plan-button:hover {
+    background-color: var(--hover-color);
+}
+
+
+
+/* Seller Plans Section  End */
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content,
+.benefit-card,
+.step,
+h2,
+.plan-card,
+.testimonial-card {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo h2 {
+        display: none;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .benefits h2,
+    .how-it-works h2,
+    .testimonials h2 {
+        font-size: 22px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: .8rem;
+    }
+
+    .plans-grid,
+    .testimonials-grid {
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .plans h2 {
+        font-size: 28px;
+    }
+
+    .plan-card h3 {
+        font-size: 20px;
+    }
+
+    .plan-card .price {
+        font-size: 18px;
+    }
+
+    .plan-card ul li {
+        font-size: 14px;
+    }
+}

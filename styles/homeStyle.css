@@ -1,0 +1,840 @@
+section {
+    width: 95%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.section-imgs {
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(0, 0, 0, 0.3) 100%);
+    background-image: url("/assets/images/ad-back_1.png");
+    position: relative;
+    background-size: 100% 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-imgs .ad-centered-text {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 0 50px;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.section-imgs .ad-centered-text h1,
+.section-imgs .ad-centered-text h2,
+.section-imgs .ad-centered-text h3,
+.section-imgs .ad-centered-text p {
+    color: white;
+    margin: 0 auto 5px auto;
+}
+
+.section-imgs .ad-centered-text h1 {
+    font-size: 40pt;
+}
+
+.section-imgs .ad-centered-text p {
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.section-imgs .ad-centered-text img {
+    object-fit: fill;
+    height: 75vh;
+    width: auto;
+}
+
+@keyframes scaleUpDown {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.ads-button {
+    position: absolute;
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    left: 46.5%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    animation: scaleUpDown 2s ease-in-out infinite;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ads-button button {
+    background: none;
+    border: none;
+    font-size: 10pt;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
+
+.ads-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.ads-button:hover button {
+    color: black;
+}
+
+.line-with-text {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line-with-text .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #cbc8c8;
+    margin: 0 10px;
+}
+
+.line-with-text .text {
+    font-size: 1.5em;
+    margin: 15px 0;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.view-all-btn {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px 8px;
+    width: fit-content;
+    margin: 1rem 0 auto auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+}
+
+.view-all-btn i {
+    font-size: 1rem;
+}
+
+.quantity_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity_btn button {
+    background: none;
+    border: none;
+}
+
+.quantity_btn .fas {
+    font-size: 12pt;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.add-t-c-span {
+    display: block;
+}
+
+/* Item Design (i-wraper) */
+.i-wraper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.4rem;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: auto;
+    align-items: stretch;
+    position: relative;
+}
+
+.i-wraper .ph-fill.ph-fire,
+.item .ph-fill.ph-fire {
+    color: orange;
+    font-size: 1.2rem;
+    position: absolute;
+    top: -0.5rem;
+    left: -0.5rem;
+    background: gray;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    position: relative;
+}
+
+.items .wasPrice {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.items .wasPrice p {
+    color: white;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 5px 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: "Darumadrop One", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: var(--red);
+}
+
+.items .item {
+    flex-grow: 1;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.items .item .i-img {
+    width: 100%;
+    margin: auto;
+}
+
+.items .item .i-img img {
+    width: auto;
+    max-width: 100%;
+    height: 10vw;
+    display: flex;
+    margin: auto;
+    object-fit: contain;
+}
+
+.items .item .seperator {
+    height: 0.5px;
+    background-color: #cbc8c8;
+    margin: 5px 10px 0 10px;
+}
+
+.items .item p.item-name {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+    max-height: 2.8em;
+    text-transform: capitalize;
+}
+
+.items .item h2.item-name {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: .9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+    max-height: 2.8em;
+    text-transform: uppercase;
+}
+
+.items .item p.item-name:hover {
+    color: var(--primary-color);
+}
+
+.seller-link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease;
+}
+
+.seller_name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--red);
+}
+
+.seller_name i {
+    color: var(--green);
+    font-size: 18px;
+}
+
+.seller-info-board {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.seller-link:hover .seller-info-board,
+.seller-info-board.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.seller-info-content .store-dtls {
+    padding: 15px;
+}
+
+.seller-info-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+
+.seller-info-content p {
+    font-size: 0.75rem;
+    color: #475569;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.seller-info-content p i {
+    color: #ac6111;
+    font-size: 1rem;
+}
+
+.board-footer {
+    display: flex;
+    padding: 0px;
+    text-align: right;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    margin-right: 0px;
+    color: #2563eb;
+    gap: 5px;
+}
+
+.store-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.board-footer:hover {
+    color: #1e40af;
+}
+
+.items .item .i-dtls {
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+.items .item .i-dtls div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.items .item .i-dtls span {
+    font-weight: 600;
+}
+
+.items .price-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    gap: 1rem;
+}
+
+.items .item-price {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.items .item-price .amount,
+.items .item-price .decimal {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.items .item-price.actual .amount {
+    font-size: 8pt;
+}
+
+.items .item-price.actual .amount,
+.items .item-price.actual .decimal {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.items .decimal {
+    font-size: 8pt;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
+.items .i-btn {
+    z-index: 1;
+}
+
+.items .i-btn button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 8px;
+    padding: 8px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.items .i-btn i {
+    font-size: 1rem;
+}
+
+.items .i-btn button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.items .i-btn button:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 600px) {
+    .seller-info-board {
+        width: 100%;
+        left: 0;
+    }
+
+    .items .item .i-dtls div {
+        display: block;
+        gap: 0.5rem;
+    }
+
+    .dot-seperator {
+        display: none;
+    }
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.pagination a:hover {
+    color: var(--white);
+    background: var(--primary-color);
+}
+
+
+.section-ad {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 20px;
+}
+
+.s-ad-col {
+    position: relative;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section6-img,
+.section7-img {
+    width: 100%;
+    height: 380px;
+    display: block;
+    object-fit: cover;
+}
+
+.ad-text {
+    top: 0;
+    position: absolute;
+    /* Positions text over the image */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Centers the text */
+    text-align: center;
+    color: #fff;
+    /* White text for better contrast */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Adds a dark background with transparency */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.ad-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.ad-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes reset {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Weekend Specials Carousel */
+.carousel,
+.premium-listing,
+.category-listing,
+.homepage-listing {
+    width: 95%;
+    max-width: 1350px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    /* background-color: #f8f8f8; */
+}
+
+.carousel .line-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.carousel .line-with-text .text {
+    font-size: 1.5em;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.carousel .line-with-text .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #cbc8c8;
+}
+
+.carousel .list {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    gap: 1.8rem;
+    padding: 5px 10px;
+    margin-inline: auto;
+}
+
+.carousel:hover .list {
+    animation-play-state: paused;
+}
+
+.carousel .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.carousel .items .wasPrice {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.carousel .items .wasPrice p {
+    color: white;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 5px 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: "Darumadrop One", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    background-color: orange;
+}
+
+.carousel .items .item {
+    flex-grow: 1;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel .items .item .i-img {
+    width: 100%;
+    margin: auto;
+}
+
+.carousel .items .item .i-img img {
+    width: auto;
+    max-width: 100%;
+    height: 10vw;
+    display: flex;
+    margin: auto;
+    object-fit: contain;
+}
+
+.carousel .items .item .seperator {
+    height: 0.5px;
+    background-color: #cbc8c8;
+    margin: 5px 10px 0 10px;
+}
+
+.carousel .items .item p.item-name {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+    max-height: 2.8em;
+    text-transform: capitalize;
+}
+
+.carousel .items .item h2.item-name {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: .9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    max-height: 2.8em;
+}
+
+.carousel .items .item p.item-name:hover {
+    color: var(--primary-color);
+}
+
+.carousel .items .item .i-dtls {
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+.carousel .items .item .i-dtls div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.carousel .items .item .i-dtls span {
+    font-weight: 600;
+}
+
+.carousel .items .price-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    gap: 1rem;
+}
+
+.carousel .items .item-price {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.carousel .items .item-price .amount,
+.carousel .items .item-price .decimal {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.carousel .items .item-price.actual .amount {
+    font-size: 8pt;
+}
+
+.carousel .items .item-price.actual .amount,
+.carousel .items .item-price.actual .decimal {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.carousel .items .decimal {
+    font-size: 8pt;
+    vertical-align: super;
+    margin-left: 2px;
+}
+
+.carousel .items .i-btn {
+    z-index: 1;
+}
+
+.carousel .items .i-btn button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-top: 8px;
+    padding: 8px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.carousel .items .i-btn i {
+    font-size: 1rem;
+}
+
+.carousel .items .i-btn button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel .items .i-btn button:active {
+    transform: scale(0.9);
+}
+
+.carousel .no-data {
+    text-align: center;
+    width: 100%;
+}
+
+.carousel .no-data .text {
+    font-size: 1.2em;
+    color: #555;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel .list.cloned .items {
+    animation: none;
+}
+
+@media (max-width: 600px) {
+    .carousel .items .item .i-dtls div {
+        display: block;
+        gap: 0.5rem;
+    }
+
+    .carousel .items .item .i-dtls .dot-seperator {
+        display: none;
+    }
+
+    .carousel .items {
+        width: 250px;
+    }
+
+    .carousel .items .item .i-img img {
+        height: 15vw;
+    }
+}

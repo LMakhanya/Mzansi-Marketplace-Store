@@ -1,0 +1,14 @@
+.p_text_content.reciepts {
+    text-align: center;
+    background-color: #f9f9f9;
+    height: 100%;
+
+    img {
+        width: 200px;
+    }
+
+    p {
+        font-size: .8rem;
+        color: var(--text-color);
+    }
+}

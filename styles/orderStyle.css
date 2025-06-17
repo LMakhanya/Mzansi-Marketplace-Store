@@ -1,0 +1,265 @@
+.p_col.two {
+    .p_text_content {
+        width: 100%;
+    }
+}
+
+.p_text_content.order {
+    position: relative;
+}
+
+.order-d-container {
+    margin: 0px auto;
+    justify-content: left;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: fit-content;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+
+    .table {
+        width: 49%;
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        padding: 0 10px 10px 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+
+    table {
+        border-collapse: collapse;
+
+        td {
+            padding: 5px 5px;
+            margin: 0;
+        }
+
+        .t-headers th {
+            padding: 10px 0px;
+            border-bottom: 1px solid lightgray;
+            border-top: none;
+            font-size: 8pt;
+        }
+    }
+
+    .orderInfo {
+        margin: 15px 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        p {
+            font-size: 10pt;
+        }
+
+    }
+
+    span.orderNo {
+        font-weight: bold;
+        font-size: 10pt;
+    }
+
+    .order-details {
+        width: 100%;
+        margin: 0;
+
+        .bag-price {
+            text-align: center;
+        }
+
+        .bag-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            margin-left: 0;
+
+            img {
+                width: auto;
+                height: 6vw;
+            }
+
+            .item-col.two {
+                padding: 0 10px;
+
+                p {
+                    font-size: 8pt;
+                }
+
+                .bag-item-name {
+                    font-size: 11pt;
+                    font-weight: 500;
+
+                }
+            }
+        }
+
+        .bag-quantity {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+
+            input {
+                margin-top: 5px;
+                width: 20px;
+                border: none;
+                padding: 5px;
+                height: fit-content;
+                font-size: 14px;
+                font-weight: 600;
+                color: black;
+                background: none;
+            }
+        }
+
+        .bag-price {
+            p {
+                text-align: right;
+
+            }
+
+            .price {
+                font-weight: bold;
+                color: green;
+                font-size: 12px;
+            }
+
+            .quantity {
+                font-size: 8pt;
+                font-weight: 450;
+            }
+        }
+    }
+
+    .total {
+        justify-content: right;
+        text-align: right;
+        margin: auto;
+        margin-right: 0px;
+        border-top: 1px solid lightgray;
+
+        p {
+            font-size: 14pt;
+        }
+
+        p span#totalAmount {
+            font-weight: bold;
+            font-size: 18pt;
+        }
+    }
+
+    .order-actions {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        /* Space between buttons */
+        padding: 10px 0;
+        flex-wrap: wrap;
+        /* Wraps buttons on smaller screens */
+    }
+
+    .actionBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 5px 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: .7rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        /* Remove underline */
+        color: white;
+        text-transform: uppercase;
+        border: 1px solid var(--white);
+        transition: all 0.3s ease-in-out;
+
+        i {
+            font-size: 1rem;
+            font-weight: 900;
+        }
+    }
+
+    .actionBtn:active {
+        transform: scale(.9);
+    }
+
+    /* Different colors for each button */
+    .trackOrder-btn {
+        background-color: #007bff;
+        /* Blue */
+    }
+
+    .viewOrder-btn {
+        background-color: #28a745;
+        /* Green */
+    }
+
+    .messageSeller-btn {
+        background-color: #ff9800;
+        /* Orange */
+    }
+
+    /* Hover effect */
+    .actionBtn:hover {
+        opacity: 0.85;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        .order-actions {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .actionBtn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+}
+
+.empty-bag-message {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+
+    img {
+        opacity: 0.5;
+        /* 10% opacity */
+        box-shadow: none;
+        width: auto;
+        margin: auto;
+        height: 12vw;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: .8rem;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: .8rem;
+        text-decoration: none;
+        color: #2563eb;
+        cursor: pointer;
+    }
+
+    span {
+        opacity: 0.5;
+
+    }
+
+}

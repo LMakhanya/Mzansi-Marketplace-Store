@@ -1,0 +1,149 @@
+2025-05-31 11:31:05 - Getting customerId for checkout ID: ch_ax4bmVB3aR2IDybInW7INrVE from yoco_payments
+2025-05-31 11:31:05 - Enhancements Payment detected: Checkout ID ch_ax4bmVB3aR2IDybInW7INrVE, Enhancement Type: 2
+2025-05-31 11:31:05 - Card already exists
+2025-05-31 11:31:05 - Calling Insert event Function
+2025-05-31 11:31:05 - Event successfully inserted for sellerID: SELLER_70254, Enhancement: 2
+
+2025-05-31 11:31:05 - Enhancement payment processed successfully-seller: SELLER_70254 & enh-id: 2 
+
+2025-05-31 11:31:05 - Product enhancement processed successfully
+
+2025-05-31 11:31:05 - Getting customerId for checkout ID: ch_ax4bmVB3aR2IDybInW7INrVE from yoco_payments
+2025-05-31 11:31:05 - Enhancements Payment detected: Checkout ID ch_ax4bmVB3aR2IDybInW7INrVE, Enhancement Type: 2
+2025-05-31 11:31:05 - Card already exists
+2025-05-31 11:31:05 - Calling Insert event Function
+2025-05-31 11:31:06 - Enhancement process was successfully***********************************************
+
+
+2025-05-31 11:57:52 - Getting customerId for checkout ID: ch_0Ll1ROo3zQJFlzKSp02iPQEV from yoco_payments
+2025-05-31 11:57:52 - Enhancements Payment detected: Checkout ID ch_0Ll1ROo3zQJFlzKSp02iPQEV, Enhancement Type: 13
+2025-05-31 11:57:52 - Card already exists
+2025-05-31 11:57:52 - Calling Insert event Function
+2025-05-31 11:57:52 - Event successfully inserted for sellerID: SELLER_70254, Enhancement: 13
+
+2025-05-31 11:57:52 - Enhancement payment processed successfully-seller: SELLER_70254 & enh-id: 13 
+
+2025-05-31 11:57:52 - Product enhancement processed successfully
+
+2025-05-31 11:57:52 - Getting customerId for checkout ID: ch_0Ll1ROo3zQJFlzKSp02iPQEV from yoco_payments
+2025-05-31 11:57:52 - Enhancements Payment detected: Checkout ID ch_0Ll1ROo3zQJFlzKSp02iPQEV, Enhancement Type: 13
+2025-05-31 11:57:52 - Card already exists
+2025-05-31 11:57:52 - Calling Insert event Function
+2025-05-31 11:57:53 - Enhancement process was successfully***********************************************
+
+
+2025-05-31 12:25:27 - Getting customerId for checkout ID: ch_y0Ll1RO6eWWWhw8I05iPMWEV from yoco_payments
+2025-05-31 12:25:27 - Getting customerId for checkout ID: ch_y0Ll1RO6eWWWhw8I05iPMWEV from yoco_payments
+2025-05-31 12:25:27 - Enhancements Payment detected: Checkout ID ch_y0Ll1RO6eWWWhw8I05iPMWEV, Enhancement Type: 14
+2025-05-31 12:25:27 - Enhancements Payment detected: Checkout ID ch_y0Ll1RO6eWWWhw8I05iPMWEV, Enhancement Type: 14
+2025-05-31 12:25:27 - Card already exists
+2025-05-31 12:25:27 - Card already exists
+2025-05-31 12:25:27 - Calling Insert event Function
+2025-05-31 12:25:27 - Calling Insert event Function
+2025-05-31 12:25:27 - Received at 2025-05-31 12:25:27:
+Error inserting event data: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ch_y0Ll1RO6eWWWhw8I05iPMWEV' for key 'p_meta_checkoutId'
+
+2025-05-31 12:25:27 - Event successfully inserted for sellerID: SELLER_70254, Enhancement: 14
+
+2025-05-31 12:25:27 - Enhancement payment processed successfully-seller: SELLER_70254 & enh-id: 14 
+
+2025-05-31 12:25:27 - Product enhancement processed successfully
+
+2025-05-31 12:25:28 - Enhancement process was successfully***********************************************
+
+
+2025-05-31 12:42:52 - Getting customerId for checkout ID: ch_ngopboe6Y9aiX6ZHPWWcpmxB from yoco_payments
+2025-05-31 12:42:52 - Getting customerId for checkout ID: ch_ngopboe6Y9aiX6ZHPWWcpmxB from yoco_payments
+2025-05-31 12:42:52 - Enhancements Payment detected: Checkout ID ch_ngopboe6Y9aiX6ZHPWWcpmxB, Enhancement Type: 16
+2025-05-31 12:42:52 - Enhancements Payment detected: Checkout ID ch_ngopboe6Y9aiX6ZHPWWcpmxB, Enhancement Type: 16
+2025-05-31 12:42:52 - Card already exists
+2025-05-31 12:42:52 - Card already exists
+2025-05-31 12:42:52 - Calling Insert event Function
+2025-05-31 12:42:52 - Calling Insert event Function
+2025-05-31 12:42:52 - Received at 2025-05-31 12:42:52:
+Error inserting event data: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ch_ngopboe6Y9aiX6ZHPWWcpmxB' for key 'p_meta_checkoutId'
+
+2025-05-31 12:42:52 - Event successfully inserted for sellerID: SELLER_70254, Enhancement: 16
+
+2025-05-31 12:42:52 - Enhancement payment processed successfully-seller: SELLER_70254 & enh-id: 16 
+
+2025-05-31 12:42:52 - Product enhancement processed successfully
+
+2025-05-31 12:42:53 - Enhancement process was successfully***********************************************
+
+
+2025-05-31 12:44:33 - Getting customerId for checkout ID: ch_2xYWXwdvvazSz4QTDmnuPN0E from yoco_payments
+2025-05-31 12:44:33 - Enhancements Payment detected: Checkout ID ch_2xYWXwdvvazSz4QTDmnuPN0E, Enhancement Type: 17
+2025-05-31 12:44:33 - Card already exists
+2025-05-31 12:44:33 - Calling Insert event Function
+2025-05-31 12:44:33 - Event successfully inserted for sellerID: SELLER_70254, Enhancement: 17
+
+2025-05-31 12:44:33 - Enhancement payment processed successfully-seller: SELLER_70254 & enh-id: 17 
+
+2025-05-31 12:44:33 - Product enhancement processed successfully
+
+2025-05-31 12:44:34 - Getting customerId for checkout ID: ch_2xYWXwdvvazSz4QTDmnuPN0E from yoco_payments
+2025-05-31 12:44:34 - Enhancements Payment detected: Checkout ID ch_2xYWXwdvvazSz4QTDmnuPN0E, Enhancement Type: 17
+2025-05-31 12:44:34 - Card already exists
+2025-05-31 12:44:34 - Calling Insert event Function
+2025-05-31 12:44:34 - Enhancement process was successfully***********************************************
+
+
+2025-05-31 14:00:57 - Getting customerId for checkout ID: ch_9g0yWYGqlZdtJnU6jKC9RmxV from yoco_payments
+2025-05-31 14:00:57 - Enhancements Payment detected: Checkout ID ch_9g0yWYGqlZdtJnU6jKC9RmxV, Enhancement Type: 18
+2025-05-31 14:00:57 - Card already exists
+2025-05-31 14:00:57 - Calling Insert event Function
+2025-05-31 14:00:57 - Event successfully inserted for sellerID: SELLER_70254, Enhancement: 18
+
+2025-05-31 14:00:57 - Enhancement payment processed successfully-seller: SELLER_70254 & enh-id: 18 
+
+2025-05-31 14:00:57 - Product enhancement processed successfully
+
+2025-05-31 14:00:57 - Getting customerId for checkout ID: ch_9g0yWYGqlZdtJnU6jKC9RmxV from yoco_payments
+2025-05-31 14:00:57 - Enhancements Payment detected: Checkout ID ch_9g0yWYGqlZdtJnU6jKC9RmxV, Enhancement Type: 18
+2025-05-31 14:00:57 - Card already exists
+2025-05-31 14:00:57 - Calling Insert event Function
+2025-05-31 14:00:59 - Enhancement process was successfully***********************************************
+
+
+2025-05-31 14:10:24 - Getting customerId for checkout ID: ch_kGEZ1Xe2KyJKtvqfYp2HJKLw from yoco_payments
+2025-05-31 14:10:24 - Change Plan payment detected: Checkout ID ch_kGEZ1Xe2KyJKtvqfYp2HJKLw
+2025-05-31 14:10:24 - Card already exists
+2025-05-31 14:10:24 - Calling Insert event Function
+2025-05-31 14:10:24 - Event successfully inserted for changePSellerID: SELLER_70254
+
+2025-05-31 14:10:24 - Getting customerId for checkout ID: ch_kGEZ1Xe2KyJKtvqfYp2HJKLw from yoco_payments
+2025-05-31 14:10:24 - Change Plan payment detected: Checkout ID ch_kGEZ1Xe2KyJKtvqfYp2HJKLw
+2025-05-31 14:10:24 - Card already exists
+2025-05-31 14:10:24 - Calling Insert event Function
+2025-05-31 14:10:25 - Plan change recorded: Seller ID SELLER_70254, New Plan: Pro Plan, Start: 2025-05-31, End: 2025-07-01
+
+2025-05-31 23:36:01 - Getting customerId for checkout ID: ch_2xYWXw39nPqizA2TyarfZkYE from yoco_payments
+2025-05-31 23:36:01 - Enhancements Payment detected: Checkout ID ch_2xYWXw39nPqizA2TyarfZkYE, Enhancement Type: 4
+2025-05-31 23:36:01 - Getting customerId for checkout ID: ch_2xYWXw39nPqizA2TyarfZkYE from yoco_payments
+2025-05-31 23:36:01 - Enhancements Payment detected: Checkout ID ch_2xYWXw39nPqizA2TyarfZkYE, Enhancement Type: 4
+2025-05-31 23:36:08 - Card inserted successfully. Card ID: 2
+2025-05-31 23:36:08 - Calling Insert event Function
+2025-05-31 23:36:08 - Card already exists
+2025-05-31 23:36:08 - Calling Insert event Function
+2025-05-31 23:36:08 - Event successfully inserted for sellerID: SELLER_70254, Enhancement: 4
+
+2025-05-31 23:36:08 - Enhancement payment processed successfully-seller: SELLER_70254 & enh-id: 4 
+
+2025-05-31 23:36:08 - Product enhancement processed successfully
+
+2025-05-31 23:36:09 - Enhancement process was successfully***********************************************
+
+
+2025-05-31 23:38:32 - Getting customerId for checkout ID: ch_2LNQXGD7MDYTXn9t2ohQkaxP from yoco_payments
+2025-05-31 23:38:32 - Change Plan payment detected: Checkout ID ch_2LNQXGD7MDYTXn9t2ohQkaxP
+2025-05-31 23:38:32 - Card already exists
+2025-05-31 23:38:32 - Calling Insert event Function
+2025-05-31 23:38:32 - Event successfully inserted for changePSellerID: SELLER_70254
+
+2025-05-31 23:38:32 - Getting customerId for checkout ID: ch_2LNQXGD7MDYTXn9t2ohQkaxP from yoco_payments
+2025-05-31 23:38:32 - Change Plan payment detected: Checkout ID ch_2LNQXGD7MDYTXn9t2ohQkaxP
+2025-05-31 23:38:32 - Card already exists
+2025-05-31 23:38:32 - Calling Insert event Function
+2025-05-31 23:38:33 - Plan change recorded: Seller ID SELLER_70254, New Plan: Pro Plan, Start: 2025-05-31, End: 2025-07-01
+

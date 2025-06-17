@@ -1,0 +1,325 @@
+.hero {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/portal/assets/imgs/people-network.png');
+    object-fit: cover;
+    background-size: cover;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-author {
+    margin-left: 12px;
+}
+
+.testimonial-author h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #111827;
+}
+
+.testimonial-author p {
+    font-size: 14px;
+    color: #e67e22;
+    margin: 4px 0 0;
+}
+
+.testimonial-content {
+    margin-top: 16px;
+    color: #6b7280;
+}
+
+/* Join Form */
+.form-section {
+    background-color: #f9fafb;
+    padding: 60px 0;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.form-info p {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 32px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e67e22;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.contact-details {
+    margin-left: 12px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 0;
+    color: #6b7280;
+}
+
+.contact-details p:first-child {
+    margin-bottom: 4px;
+}
+
+.contact-details strong {
+    color: #111827;
+    font-weight: 500;
+}
+
+.contact-details .email {
+    font-size: 0.875rem;
+    /* approx 14px */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.form-wrapper {
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input containers */
+.combo_field {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0px;
+
+    .form-group {
+        margin-top: 0px;
+        width: 100%;
+
+    }
+}
+
+.form-group {
+    position: relative;
+    margin: 15px 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 28px);
+    padding: 12px 12px 12px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: .9rem;
+    letter-spacing: .6px;
+    transition: border-color 0.3s ease;
+    padding-top: 25px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(246, 159, 59, 0.1);
+}
+
+.form-group label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 12px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding: 0 4px;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: 2px;
+    font-size: 11px;
+    color: #b1b1b1;
+    transform: translateY(0%);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    font-style: italic;
+    color: gray;
+    font-size: 0.65rem;
+    opacity: 0;
+}
+
+.form-group input:invalid:focus,
+.form-group textarea:invalid:focus {
+    border-color: #d11804;
+}
+
+/* Ensure placeholder remains visible when input is focused */
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    opacity: 1;
+}
+
+.dropdown,
+.text-input,
+.textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #1f2937;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-input,
+.textarea {
+    width: calc(100% - 27px);
+}
+
+.dropdown:focus,
+.text-input:focus,
+.textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.dropdown {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"><path fill="%236B7280" d="M0 0h12L6 6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding: 16px 12px;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #e67e22;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    transition: .3s all ease-in-out;
+}
+
+.submit-button:disabled {
+    opacity: .7;
+}
+
+.submit-button:disabled:active {
+    transform: unset;
+}
+
+.submit-button:hover {
+    background-color: #d1913d;
+}
+
+.submit-button:active {
+    transform: scale(.95);
+}
+
+.input-error {
+    border-color: #ef4444;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 4px;
+    display: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    label {
+        margin-left: 8px;
+        font-size: .75rem;
+        color: #374151;
+    }
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    accent-color: var(--blue);
+}
+
+/* FAQ Section */
+.faq-item {
+    background-color: #f9fafb;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.faq-item p {
+    color: #6b7280;
+    margin-top: 8px;
+}

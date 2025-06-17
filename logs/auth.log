@@ -1,0 +1,305 @@
+2025-03-29 22:11 - Login successful for UserID: Array
+2025-03-29 22:11 - Login successful for: loovoour@gmail.com
+2025-03-29 22:13 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luvuyo",
+        "LastName": "Mkhanya",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$argon2i$v=19$m=65536,t=4,p=1$UTJ0SG02c3NPRGY3aGdaMQ$+pi+kT6FD0ff2uLSo\/rkC7bWWrO5GWma3KQeJWmb\/lg",
+        "addressID": 0,
+        "created_at": "2025-03-29 21:54:17",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-03-29 22:13 - Login successful for: loovoour@gmail.com
+2025-03-29 22:19 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luvuyo",
+        "LastName": "Mkhanya",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$argon2i$v=19$m=65536,t=4,p=1$UTJ0SG02c3NPRGY3aGdaMQ$+pi+kT6FD0ff2uLSo\/rkC7bWWrO5GWma3KQeJWmb\/lg",
+        "addressID": 0,
+        "created_at": "2025-03-29 21:54:17",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-03-29 22:19 - Login successful for: loovoour@gmail.com
+2025-03-29 22:35 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-03-29 22:35 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luvuyo",
+        "LastName": "Mkhanya",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$argon2i$v=19$m=65536,t=4,p=1$UTJ0SG02c3NPRGY3aGdaMQ$+pi+kT6FD0ff2uLSo\/rkC7bWWrO5GWma3KQeJWmb\/lg",
+        "addressID": 0,
+        "created_at": "2025-03-29 21:54:17",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-03-29 22:35 - Login successful for: loovoour@gmail.com
+2025-03-29 22:45 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luvuyo",
+        "LastName": "Mkhanya",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$argon2i$v=19$m=65536,t=4,p=1$UTJ0SG02c3NPRGY3aGdaMQ$+pi+kT6FD0ff2uLSo\/rkC7bWWrO5GWma3KQeJWmb\/lg",
+        "addressID": 0,
+        "created_at": "2025-03-29 21:58:17",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-03-29 22:45 - Login successful for: loovoour@gmail.com
+2025-03-29 22:48 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luvuyo",
+        "LastName": "Mkhanya",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$argon2i$v=19$m=65536,t=4,p=1$UTJ0SG02c3NPRGY3aGdaMQ$+pi+kT6FD0ff2uLSo\/rkC7bWWrO5GWma3KQeJWmb\/lg",
+        "addressID": 0,
+        "created_at": "2025-03-29 21:58:17",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-03-29 22:48 - Login successful for: loovoour@gmail.com
+2025-03-29 22:49 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luvuyo",
+        "LastName": "Mkhanya",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$argon2i$v=19$m=65536,t=4,p=1$UTJ0SG02c3NPRGY3aGdaMQ$+pi+kT6FD0ff2uLSo\/rkC7bWWrO5GWma3KQeJWmb\/lg",
+        "addressID": 0,
+        "created_at": "2025-03-29 21:58:17",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-03-29 22:49 - Login successful for: loovoour@gmail.com
+2025-03-29 22:50 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-03-29 22:51 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-03-29 22:51 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-04-08 22:03 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-04-08 22:03 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-04-08 22:03 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-04-08 22:03 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-04-08 22:03 - Account creation failed: Email already registered
+2025-04-08 22:04 - Login failed for: loovoour@gmail.com - Invalid credentials
+2025-04-08 22:10 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luyanda",
+        "LastName": "Mchunu",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$2y$10$CSFy4mYR6jLUt1zvCDXhLeGXMC2.0sLV\/bx2mifJvVL9rJXqgEJRO",
+        "addressID": 3,
+        "created_at": "2025-03-12 15:26:24",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-04-08 22:10 - Login successful for: loovoour@gmail.com
+2025-05-08 00:18 - Login failed for: luvuyomm - Invalid credentials
+2025-05-08 00:18 - Login failed for: luvuyo - Invalid credentials
+2025-05-08 00:18 - Account creation failed: Email already registered
+2025-05-08 00:20 - Login failed for: Luvuyo - Invalid credentials
+2025-05-08 00:20 - Login failed for: Luvuyo - Invalid credentials
+2025-05-08 00:20 - Login failed for: Luvuyo - Invalid credentials
+2025-05-08 00:20 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luyanda",
+        "LastName": "Mchunu",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$2y$10$CSFy4mYR6jLUt1zvCDXhLeGXMC2.0sLV\/bx2mifJvVL9rJXqgEJRO",
+        "addressID": 3,
+        "created_at": "2025-03-12 15:26:24",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-05-08 00:20 - Login successful for: loovoour@gmail.com
+2025-05-11 02:00 - Login failed for: luvuyomm - Invalid credentials
+2025-05-11 02:00 - Login failed for: Luvuyo - Invalid credentials
+2025-05-11 02:00 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luyanda",
+        "LastName": "Mchunu",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$2y$10$CSFy4mYR6jLUt1zvCDXhLeGXMC2.0sLV\/bx2mifJvVL9rJXqgEJRO",
+        "addressID": 3,
+        "created_at": "2025-03-12 15:26:24",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-05-11 20:09 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "FirstName": "Luyanda",
+        "LastName": "Mchunu",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$2y$10$CSFy4mYR6jLUt1zvCDXhLeGXMC2.0sLV\/bx2mifJvVL9rJXqgEJRO",
+        "addressID": 2,
+        "created_at": "2025-03-12 15:26:24",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-05-11 20:09 - Login successful for: loovoour@gmail.com
+2025-06-05 02:55 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "firstname": "Luyanda",
+        "lastname": "Mchunu",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$2y$10$CSFy4mYR6jLUt1zvCDXhLeGXMC2.0sLV\/bx2mifJvVL9rJXqgEJRO",
+        "addressID": 2,
+        "created_at": "2025-03-12 15:26:24",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-06-05 02:55 - Login successful for: loovoour@gmail.com
+2025-06-05 02:57 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "firstname": "Luyanda",
+        "lastname": "Mchunu",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$2y$10$CSFy4mYR6jLUt1zvCDXhLeGXMC2.0sLV\/bx2mifJvVL9rJXqgEJRO",
+        "addressID": 2,
+        "created_at": "2025-03-12 15:26:24",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-06-05 02:57 - Login successful for: loovoour@gmail.com
+2025-06-05 03:19 - Login successful for: {
+    "success": true,
+    "user": {
+        "CustomerID": "SSSZA25_GI8DU2",
+        "firstname": "Luyanda",
+        "lastname": "Mchunu",
+        "username": "Luvuyo",
+        "phone": "0695352229",
+        "Email": "loovoour@gmail.com",
+        "Password": "$2y$10$CSFy4mYR6jLUt1zvCDXhLeGXMC2.0sLV\/bx2mifJvVL9rJXqgEJRO",
+        "addressID": 3,
+        "created_at": "2025-03-12 15:26:24",
+        "device_name": "Windows PC",
+        "cust_type": "customer",
+        "ip_address": "::1",
+        "hostname": "DESKTOP-JRPOJS4",
+        "device_type": "Desktop",
+        "dateOfBirth": "2002-10-31",
+        "gender": "male"
+    }
+}
+2025-06-05 03:19 - Login successful for: loovoour@gmail.com

@@ -1,0 +1,245 @@
+@media (max-width: 767px) {
+
+    /* Profile Style */
+    .profile_column {
+        /*  grid-template-columns: 1.5fr 4fr; */
+        display: flex;
+    }
+
+    .p_col.one {
+        position: absolute;
+        left: 0;
+        z-index: 50;
+        height: 100vh;
+        flex-direction: row;
+        width: 0px;
+
+        .item_container {
+            height: 100%;
+            flex: 1;
+
+            .profile-options {
+
+                li {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .togglePMenu {
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            margin: auto;
+        }
+
+        #minimise {
+            width: 35px;
+            height: 50PX;
+            cursor: pointer;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border: 1px solid var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: none;
+            background: var(--primary-color);
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+            color: white;
+            font-weight: bold;
+            z-index: 50;
+        }
+    }
+
+    .p_col.two {
+        width: 100%;
+        overflow: none;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+
+        .design-img {
+            height: 45vh;
+            object-fit: cover;
+            background-size: cover;
+            border-radius: 8px;
+
+            .centerd-text {
+                padding: 10px;
+
+                P {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .p_text_content.deliveryAddress {
+            width: 90%;
+        }
+
+        .p_text_content {
+            .section-title {
+                margin-bottom: 10px;
+            }
+
+            .details-form {
+                padding: 20px;
+            }
+
+            .addressCard {
+                width: 100%;
+                margin: 5px 0px;
+
+                .names {
+                    display: flex;
+
+                    .fields.name {
+                        margin-right: 10px;
+                    }
+
+                    .fields {
+                        width: 100%;
+
+                    }
+
+                }
+
+                .addbtn {
+                    background-color: black;
+                    color: #fff;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+
+                .addbtn.use-btn {
+                    float: right;
+                }
+
+                /* Styling for the additional information (hidden by default) */
+                .additional-info {
+                    display: none;
+                }
+
+                .show {
+                    display: block;
+                }
+            }
+        }
+
+        .edit-button {
+            margin-right: 20px;
+        }
+
+        .table {
+            width: 100%;
+        }
+    }
+
+    /* Order Style */
+    .order-d-container {
+        margin: 0;
+        display: block;
+        justify-content: center;
+        width: 100%;
+        width: 100%;
+
+        .orderInfo {
+
+            p span.orderNo {
+                font-size: 7pt;
+            }
+
+            p {
+                font-size: 6pt;
+            }
+
+        }
+
+        .table {
+            width: 100%;
+        }
+
+        table {
+
+            .t-headers th {
+                font-size: 8pt;
+            }
+        }
+
+        span.orderNo {
+            font-weight: bold;
+            font-size: 10pt;
+        }
+
+        /* .bag-details.item {
+                width: 100%;
+                margin: auto;
+            } */
+        .order-details {
+
+            .bag-item {
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                margin-left: 0;
+
+                img {
+                    height: 14vw;
+                }
+
+                .item-col.two {
+
+                    p {
+                        font-size: 7.5pt;
+                    }
+
+                    .bag-item-name {
+                        font-size: 9.5pt;
+
+                    }
+                }
+            }
+
+            .bag-price {
+                .price {
+                    font-size: 10px;
+                }
+
+                .quantity {
+                    font-size: 7.5pt;
+                }
+            }
+        }
+
+        .empty-bag-message {
+            margin-bottom: 10px;
+
+            img {
+                width: 25vw;
+                height: 20vw;
+            }
+
+        }
+
+        .total {
+            padding-right: 5px;
+
+            p {
+                font-size: 9pt;
+            }
+
+            p span#totalAmount {
+                font-weight: bold;
+                font-size: 10.5pt;
+            }
+        }
+
+    }
+
+
+
+
+}

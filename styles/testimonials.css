@@ -1,0 +1,133 @@
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 0;
+    background-color: #f5f7fa;
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding-bottom: 2rem;
+}
+
+.testimonial-card {
+    min-width: 100%;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin: 0 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.testimonial-card p::before,
+.testimonial-card p::after {
+    color: #3498db;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.testimonial-card p::before {
+    content: "“";
+    position: absolute;
+    left: -1rem;
+    top: -0.5rem;
+}
+
+.testimonial-card p::after {
+    content: "”";
+}
+
+.author {
+    font-weight: 600;
+    color: #3498db;
+    display: block;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: #3498db;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    color: #3498db;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.slider-arrow:hover {
+    background: #3498db;
+    color: white;
+}
+
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-slider {
+        padding: 0 1rem;
+    }
+    
+    .slider-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 1rem;
+    }
+}

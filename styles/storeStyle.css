@@ -1,0 +1,426 @@
+.selected-opt {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+}
+
+.grid_section {
+    gap: 0px;
+    margin: auto;
+    grid-template-columns: .8fr 4fr;
+}
+
+
+#side-filter {
+    display: none;
+}
+
+
+.s_col.one {
+    max-width: 1350px;
+}
+
+.filterPanel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: sticky;
+    background: white;
+    z-index: 99;
+    border-bottom: 1px solid rgb(216, 216, 216);
+
+
+    .filter-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        padding: 5px 8px;
+        gap: 2px;
+        cursor: pointer;
+    }
+
+    .line-with-text {
+        flex: 1;
+        padding: 0px;
+    }
+
+    p {
+        font-size: .65rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+
+}
+
+.filter_container {
+    display: flex;
+    justify-content: end;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.filter_container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.filter_container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.filter_container::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+.filter_container_demo {
+    display: none;
+    flex-direction: column;
+    gap: 0px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .08);
+    z-index: -1;
+
+    .close {
+        align-items: right;
+        display: flex;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+}
+
+.filter-group {
+    position: relative;
+    width: 25vw;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    .label {
+        display: inline;
+        margin-right: 2px;
+        font-size: .8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 100%;
+
+        input {
+            width: 55%;
+        }
+    }
+
+    .selected_label {
+        border: none;
+        background: none;
+        width: 50px;
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 800;
+        color: red
+    }
+
+    .icon {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .options {
+        margin-top: 0;
+        display: none;
+        padding-left: 5%;
+
+        .selected {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 5px;
+
+        }
+
+        /* CSS */
+        .ul-brand {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .brand-option {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                gap: 8px;
+                /* Space between indicator and text */
+                padding: 6px 12px;
+                border-radius: 4px;
+                transition: all 0.2s ease;
+            }
+
+            .brand-option input[type="radio"] {
+                display: none;
+            }
+
+            .brand-indicator {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #ccc;
+                display: inline-block;
+                transition: all 0.2s ease;
+            }
+
+            .brand-option input[type="radio"]:checked+.brand-indicator {
+                background-color: var(--primary-color);
+                /* Blue when selected */
+                transform: scale(1.2);
+            }
+
+            .brand-option input[type="radio"]:checked~span:not(.brand-indicator) {
+                /* Optional: style the text when selected */
+                font-weight: 600;
+            }
+        }
+
+        /* CSS */
+        .ul-color {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            /* Space between items */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .color-option {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                gap: 8px;
+                /* Space between circle and text */
+            }
+
+            .color-option input[type="radio"] {
+                display: none;
+                /* Hide the default radio button */
+            }
+
+            .color-circle {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: inline-block;
+                border: 2px solid #fff;
+                /* White border for contrast */
+                box-shadow: 0 0 0 1px #ccc;
+                /* Outer border */
+                transition: transform 0.2s ease;
+            }
+
+            .all-colors {
+                background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+                /* Multicolor for "All" */
+            }
+
+            .color-option:hover .color-circle {
+                transform: scale(1.1);
+                /* Slight grow effect on hover */
+            }
+
+            .color-option input[type="radio"]:checked+.color-circle {
+                transform: scale(1.2);
+                /* Larger when selected */
+                box-shadow: 0 0 0 2px #666;
+                /* Darker border when selected */
+            }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: .9rem;
+            cursor: pointer;
+
+        }
+    }
+}
+
+.price-input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+    width: 200px;
+}
+
+.price-input-container input {
+    border: none;
+    outline: none;
+    width: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.price-input-container button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* } */
+
+.s_col.two {}
+
+.store-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 0px;
+    display: flex;
+    right: auto;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .items {
+        margin: 10px;
+        width: 15vw;
+        cursor: pointer;
+        background-color: white;
+
+
+        .item {
+            box-shadow: 0 0 1px rgb(0, 0, 0, 0.5);
+
+
+            .i-img {
+                margin: auto;
+                width: fit-content;
+            }
+
+            .seperator {
+                flex-grow: 1;
+                height: .5px;
+                background-color: #cbc8c8;
+                margin: 0 10px;
+            }
+
+            .i-dtls {
+
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 10px;
+                font-size: 7.5pt;
+
+                div {
+                    display: flex;
+                    width: 100%;
+
+                    p {
+                        text-align: right;
+                        width: 100%;
+
+                    }
+                }
+
+
+                span {
+                    padding: 2px 10px;
+                    font-weight: 600;
+                }
+
+                p.item-name {
+                    font-weight: 500;
+                    font-size: 12pt;
+                    margin-bottom: 5px;
+
+                }
+
+                p.item-price {
+                    margin-top: 5px;
+                    font-weight: 600;
+                    font-size: 10pt;
+                    text-align: right;
+                }
+            }
+
+            .i-btn {
+                background-color: black;
+                width: 100%;
+                margin: auto;
+                padding: 5px 20px;
+                text-align: center;
+
+                button {
+                    background: none;
+                    border: none;
+                    color: white;
+                    font-size: 10pt;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .sugst-items::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .sugg-btns {
+        width: 100%;
+        position: absolute;
+        margin-top: 150px;
+    }
+
+    .next,
+    .prev {
+        position: absolute;
+        padding: 7px 10px;
+        color: white;
+        transition: .6s ease;
+        border: none;
+        background-color: #e0e0e0;
+        cursor: pointer;
+        border-radius: 50%
+    }
+
+    .prev {
+        left: 20px;
+    }
+
+    .next {
+        right: 20px;
+    }
+}

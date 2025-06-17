@@ -1,0 +1,365 @@
+.success-overlay,
+.reg-opt-overlay,
+.account-overlay,
+.ordersuccess-overlay,
+.overlay {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(.5px);
+    -webkit-backdrop-filter: blur(.5px);
+    z-index: 100;
+    overflow: hidden;
+    scroll-behavior: none;
+    display: none;
+}
+
+.success-popup {
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    opacity: 0;
+    transform: scale(0.9);
+    overflow: none;
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    .overlay-item-dtls {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        text-align: left;
+
+        img {
+            width: 20%;
+            height: auto;
+        }
+
+        div {
+            margin: auto 0;
+            font-size: 10pt;
+
+            h3 {
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    p {
+        font-size: 10pt;
+    }
+
+    .popup-btn {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            width: 160px;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 8pt;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            background-color: var(--primary-color);
+            border: 1px solid white;
+            color: var(--white);
+        }
+
+        i {
+            font-size: 10pt;
+        }
+
+        a:active {
+            transform: scale(.9);
+            transition: .5s;
+        }
+    }
+
+    button:first-child {
+        color: black;
+    }
+
+    button:last-child {
+        padding: 10px;
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .item-overlay-close {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 15px;
+        padding: 5px 10px;
+        cursor: pointer;
+        color: var(--white);
+        transition: .3s;
+        background-color: red;
+    }
+}
+
+/* When you add the 'show' class */
+.success-popup.show {
+    opacity: 1;
+    pointer-events: all;
+    animation: bounceIn 1s ease forwards;
+    /* Bounce in animation */
+}
+/* 
+body.popup-open {
+    overflow: hidden;
+    background-color: red;
+} */
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Bounce animation */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    80% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .success-popup {
+        width: 96%;
+    }
+}
+
+/* Size Guide Overlay Styles */
+.size-guide-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.size-guide-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.size-guide-container {
+    background: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.size-guide-overlay.active .size-guide-container {
+    transform: translateY(0);
+}
+
+.size-guide-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+.size-guide-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.close-guide-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: -0.5rem;
+}
+
+.size-guide-content {
+    padding: 1.5rem;
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.guide-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 1.5rem;
+}
+
+.guide-tab {
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    font-size: .9rem;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.guide-tab.active {
+    color: #4f46e5;
+    border-bottom-color: #4f46e5;
+}
+
+.size-tables {
+    margin-top: 1rem;
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    display: none;
+}
+
+.size-table.active {
+    display: table;
+}
+
+.size-table th {
+    background: #f3f4f6;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #374151;
+    font-size: .857rem;
+}
+
+.size-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4b5563;
+    font-size: .8rem;
+}
+
+.size-table tr:last-child td {
+    border-bottom: none;
+}
+
+.size-table tr:hover td {
+    background: #f9fafb;
+}
+
+.highlight-cell {
+    background: #f5f3ff !important;
+    color: #4f46e5 !important;
+    font-weight: 500;
+}
+
+.measurement-help {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.measurement-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.measurement-steps {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.measurement-step {
+    flex: 1;
+    font-size: .75rem;
+}
+
+.step-number {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .size-guide-container {
+        width: 95%;
+    }
+
+    .measurement-steps {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .size-guide-header {
+        padding: 1rem;
+    }
+
+    .size-guide-content {
+        padding: 1rem;
+    }
+}

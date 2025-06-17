@@ -1,0 +1,116 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav-container {
+        padding: 12px 10px;
+    }
+
+    .logo img {
+        height: 20px;
+        width: auto;
+        max-width: 65px;
+        padding: 8px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: white;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 49;
+    }
+
+    .nav-btns {
+        gap: .8rem;
+    }
+
+    .nav-button {
+        padding: 10px 14px;
+        border-radius: 25px;
+        font-size: .7rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+    }
+
+    .section-heading {
+        font-size: 25px;
+    }
+
+    .feature-title {
+        font-size: 1.2rem;
+    }
+
+    .combo_field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Agents Page */
+    .form-wrapper {
+        padding: 15px;
+    }
+
+    /* Sellers Page */
+    /* Benefits */
+
+    .step {
+        padding: 10px;
+        position: relative;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-card.popular {
+        order: -1;
+        /* Move popular plan to top on mobile */
+    }
+
+    /* Trial Page  */
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}

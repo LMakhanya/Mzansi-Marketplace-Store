@@ -1,0 +1,162 @@
+body {
+    background-color: #f4f4f4;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+
+/* Removes default body margin */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin: auto;
+
+    p {
+        background: linear-gradient(60deg, var(--primary-color), #000000);
+        background-color: white;
+        padding: 10px 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 16pt;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        width: 80%;
+    }
+
+}
+
+.p_wrapper {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    background-color: white;
+    width: 80%;
+    margin: auto;
+
+
+
+    .forms {
+        padding-top: 40px;
+
+        h2 {
+
+            letter-spacing: .05rem;
+            padding: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 200;
+        }
+
+        .inline {
+            display: flex;
+            justify-content: space-between;
+
+            .f-fied {
+             
+                width: 48%;
+            }
+        }
+
+        input[type='text'],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: none;
+            box-sizing: border-box;
+            background: white;
+            font-size: 8pt;
+            border-bottom: 1px solid lightgray;
+            outline: none;
+            /* Remove outline */
+        }
+
+       
+        input:focus,
+        select:focus {
+            border-bottom: 1.5px solid var(--primary-color); /* Keep the bottom border color */
+        }
+
+        .storeName {
+            margin-bottom: 20px;
+
+            div {
+                margin: auto;
+                width: fit-content;
+                display: flex;
+            }
+
+            img {
+                width: 10vw;
+                height: 8vw;
+                box-shadow: none;
+            }
+
+            p {
+                font-weight: bold;
+                font-size: 30pt;
+                padding: auto;
+                margin: auto;
+                margin-left: 0px;
+                text-align: center;
+            }
+        }
+
+        .amountdue {
+            padding: 20px 15px;
+            box-shadow: 0 0 1.5px rgba(0, 0, 0, .5);
+            border-radius: 8px;
+            margin: 20px 0;
+
+            p {
+                font-size: 10pt;
+            }
+
+            p#amountDue {
+                text-align: right;
+                font-weight: 500;
+                margin-top: 10px;
+                font-size: 20pt
+            }
+        }
+
+    }
+
+    .pform {
+        display: none;
+        padding: 0 50px;
+        padding-bottom: 20px;
+
+    }
+
+    .pform.active {
+        display: block;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+        justify-content: right;
+    }
+
+    .btn-container input[type='submit'] {
+        border: none;
+        padding: 10px 20px;
+        background: black;
+        border-radius: 5px;
+        font-size: 10pt;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        position: relative;
+        right: 0;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+}

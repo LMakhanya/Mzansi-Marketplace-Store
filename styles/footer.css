@@ -1,0 +1,228 @@
+/* Footer Styles */
+.footer {
+    background-color: #111827;
+    color: #fff;
+    padding: 0rem 2rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.payments-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    /* Space between icons */
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.payments-icons img {
+   /*  width: 100px; */
+    height: 20px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.payments-icons img.bg-white {
+    background-color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .payments-icons img {
+        width: 35px;
+        /* Equal size for tablets */
+        height: 35px;
+    }
+
+    .payments-icons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payments-icons img {
+        width: 40px;
+        /* Equal size for mobile */
+        height: 40px;
+    }
+
+    .payments-icons {
+        gap: 8px;
+        padding: 10px;
+    }
+}
+
+.footer-row {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-col {
+    padding: 0 1rem;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.footer-col .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col .links li {
+    margin-bottom: .2rem;
+}
+
+.footer-col .links a {
+    color: #d1d5db;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-col .links a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.footer-col p {
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 0.785rem;
+}
+
+.footer-col form {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.footer-col input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.785rem;
+    outline: none;
+    border: 1px solid white;
+}
+
+.footer-col button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0 1.25rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-col button:hover {
+    background-color: var(--hover-color);
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #1f2937;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.icons a:hover {
+    background-color: var(--primary-color);
+}
+
+.copy-right {
+    border-top: 1px solid #374151;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.copy-right p {
+    color: #9ca3af;
+    margin:0;
+    font-size: 0.785rem;
+}
+
+.copy-right a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.copy-right a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        padding: 0 1.5rem;
+    }
+
+    .footer-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .footer-col {
+        padding: 0;
+    }
+
+    .footer-col:last-child {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-col:last-child {
+        grid-column: span 1;
+    }
+
+    .copy-right {
+        text-align: left;
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,219 @@
+.side-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 .05rem .2rem rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 0;
+    z-index: 1001;
+
+    .item_container {
+        overflow-y: scroll;
+        height: 80%;
+
+    }
+
+    .bag_btns {
+        justify-content: center;
+        display: flex;
+        bottom: 0;
+        padding: 10px;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+
+    }
+
+    .bag_btns .viewbag {
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    .bag_btns .checkout {
+        width: 40%;
+    }
+
+    .btn-vb,
+    .btn-checkO {
+        border: none;
+        background: #292929;
+        border-radius: 6px;
+        cursor: pointer;
+        height: 50px;
+        width: 100%;
+        color: white;
+        font-weight: 700;
+        font-size: 11pt;
+        transition: all 0.3s ease;
+        margin: auto;
+
+    }
+
+    .bag_btns .btn-vb:hover,
+    .bag_btns .btn-checkO:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    }
+
+    .item_container::-webkit-scrollbar {
+        display: none;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .line-with-text {
+        padding: 15px 0;
+        box-shadow: 0 .05rem .2rem rgba(0, 0, 0, .5);
+        text-align: center;
+        justify-content: center;
+        background: linear-gradient(60deg, var(--primary-color), #000000);
+        color: white;
+
+        h1 {
+
+            font-weight: 600;
+        }
+    }
+
+    .bag_item {
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        padding: 0 20px;
+        margin-bottom: 15px;
+
+
+        .delete {
+            button {
+                background: none;
+                border: none;
+
+                #trash {
+                    color: black;
+                    margin-right: 0px;
+                    margin-left: auto;
+                    right: 20px;
+                    left: auto;
+                    font-size: 11pt;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+        .pImage {
+            margin-right: 20px;
+        }
+
+        .b_item_details p {
+            margin-bottom: 8px;
+        }
+
+        .b_item_details {
+            width: 100%;
+
+            #pName {
+                font-size: 14pt;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 10pt;
+                width: 80%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            span {
+                font-weight: 500;
+                left: auto;
+            }
+
+            .quantity_btn {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    background: none;
+                    border: none;
+                }
+
+                .fas {
+                    font-size: 12pt;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    color: black;
+                    font-weight: 700;
+                    transition: all 0.3s ease;
+                    margin: 10px;
+                }
+            }
+
+            input {
+                margin-top: 5px;
+                width: 20px;
+                border: none;
+                padding: 2px 5px;
+                text-align: center;
+                height: fit-content;
+                font-size: 10px;
+                color: black;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                border-radius: 50%;
+            }
+
+        }
+    }
+
+    .bag_item img {
+        width: 100px;
+        height: 110px;
+    }
+}
+
+.side-panel h2 {
+    margin-left: 20px;
+}
+
+.side-panel a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-panel a:hover {
+    color: #f1f1f1;
+}
+
+.side-panel .close_bag {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 30px;
+    margin-left: 0;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+
+/* Additional Styles to Disable Scroll and Pointer Events */
+body.side-panel-open {
+    overflow: hidden;
+    /* Disable scrolling */
+    cursor: default;
+    /* Set cursor to default */
+}
+
+.side-panel {
+    cursor: auto;
+    /* Set cursor to auto for the side panel */
+}

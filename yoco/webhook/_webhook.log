@@ -1,0 +1,174 @@
+Received at 2025-02-25 13:42:52 PlusCode: default_tx_ref:
+{"createdDate":"2025-02-25T13:42:52.117449Z","id":"evt_4xbqRB9dNjVTDnGuBAkCYoag","payload":{"amount":39999,"createdDate":"2025-02-25T13:42:22.113277Z","currency":"ZAR","id":"p_2LNQmwDvXYztXwbSe7jSb72x","metadata":{"checkoutId":"ch_ZgnMeOmNeB1IvQFqdnCDX5En","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 13:42:52 PlusCode: default_tx_ref:
+{"createdDate":"2025-02-25T13:38:38.868274Z","id":"evt_pLpJY7m97roSJGSR89S42jgZ","payload":{"amount":39999,"createdDate":"2025-02-25T13:38:22.054471Z","currency":"ZAR","id":"p_ZgnMeOm9AYGT1Nzf6vUDy9En","metadata":{"checkoutId":"ch_dg1e80VDDJoUqk1IPDQiPwZg","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 13:56:24 PlusCode: default_tx_ref:
+{"createdDate":"2025-02-25T13:56:23.642592Z","id":"evt_JL2nKjZwXONilDqFpXilnNLZ","payload":{"amount":39999,"createdDate":"2025-02-25T13:56:10.248164Z","currency":"ZAR","id":"p_3LRQkY1RWQmcNjaFnAGTrP5x","metadata":{"checkoutId":"ch_rLQQmvJP0OJC0PUrOOiQqGL5","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 14:04:17 PlusCode: default_tx_ref:
+{"createdDate":"2025-02-25T14:04:16.963906Z","id":"evt_yxvqJvzyKjQs01IbZ3Iwz6gB","payload":{"amount":39999,"createdDate":"2025-02-25T14:04:04.047500Z","currency":"ZAR","id":"p_aEqGkAzrv21hRKtyXwfvaMxD","metadata":{"checkoutId":"ch_GEZ1RVBpPRKFPkzCMz1h62Lw","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 14:08:54 PlusCode: default_tx_ref:
+{"createdDate":"2025-02-25T14:08:53.633961Z","id":"evt_dg1e80pey8YcMpZtBknFPqrg","payload":{"amount":39999,"createdDate":"2025-02-25T14:08:42.122203Z","currency":"ZAR","id":"p_kg9YKMkYeWbfbjrf2Vsob0g7","metadata":{"checkoutId":"ch_wxMZm6DZKoOUkbRfk3S22kLe","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 14:14:49 PlusCode: default_tx_ref:
+{"createdDate":"2025-02-25T14:14:48.692270Z","id":"evt_9g0yKDZp8DXsaOvizAmuy41x","payload":{"amount":39999,"createdDate":"2025-02-25T14:14:35.872560Z","currency":"ZAR","id":"p_NyxvqJvzD9DlHV3sryu3bKgB","metadata":{"checkoutId":"ch_QLOBrojyA32FVVZu2kQiyO3x","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 14:15:56 PlusCode: default_tx_ref:
+{"createdDate":"2025-02-25T14:15:55.930118Z","id":"evt_2LNQmw06J4BTXKnSAlVUQ20x","payload":{"amount":39999,"createdDate":"2025-02-25T14:15:41.994478Z","currency":"ZAR","id":"p_1EAwm2kYyDAUm9fBj0cnm0xm","metadata":{"checkoutId":"ch_m4xbqRBNn0kDUaJcBN8h6ngy","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 14:31:14 PlusCode: SSSZA25_OD1QD6:
+{"createdDate":"2025-02-25T14:31:13.578268Z","id":"evt_JL2nKjaW6GmClyvulJJF7GDL","payload":{"amount":39999,"createdDate":"2025-02-25T14:30:57.700111Z","currency":"ZAR","id":"p_JL2nKjaWQz8TlBRIlAwHomDL","metadata":{"checkoutId":"ch_aEqGkAzbPn8FDR5H14qTWbJx","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 23:52:01 CustomerID: SSSZA25_5P8VM7:
+{"createdDate":"2025-02-25T23:52:00.604022Z","id":"evt_1EAwmpXmpl7h2lPHDJKIAqlx","payload":{"amount":39999,"createdDate":"2025-02-25T23:36:08.559186Z","currency":"ZAR","id":"p_ZgnMeG1DNbNcZ4BIVYms1XjE","metadata":{"checkoutId":"ch_ogkY63nBGApsRdeS5RdFd1wL","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-25 23:55:23 CustomerID: SSSZA25_5P8VM7:
+{"createdDate":"2025-02-25T23:55:23.105515Z","id":"evt_4EX8R6yvGNwFXbzsRrCKX9EN","payload":{"amount":39999,"createdDate":"2025-02-25T23:55:02.064649Z","currency":"ZAR","id":"p_maEqGk2eRQ0OuDy8sayTVmxD","metadata":{"checkoutId":"ch_agJkmd7M12WSVGtXpOIXvVx2","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-26 00:16:16 CustomerID: SSSZA25_5P8VM7:
+{"createdDate":"2025-02-26T00:16:16.143741Z","id":"evt_PgrMnKl3jdQi0z4sAjTRYqEb","payload":{"amount":24999,"createdDate":"2025-02-26T00:15:56.513256Z","currency":"ZAR","id":"p_kg9YKne7RD4tyy5HrNACooZg","metadata":{"checkoutId":"ch_wxMZmyKWe93ikrYiq28Io0yL","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-26 00:34:07 CustomerID: SSSZA25_LUmEUm:
+{"createdDate":"2025-02-26T00:34:06.414368Z","id":"evt_dg1e8A5eBAAfGytXAluJJ9gB","payload":{"amount":39999,"createdDate":"2025-02-26T00:33:55.134023Z","currency":"ZAR","id":"p_7x3YKw5Y463h243fYOQUmVzE","metadata":{"checkoutId":"ch_4xbqRjaqzYqclnqUjQhbZngy","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-26 00:37:22 CustomerID: SSSZA25_KReTU0:
+{"createdDate":"2025-02-26T00:37:21.797323Z","id":"evt_XEwO18k0zz7Syjmf8oKSAQmE","payload":{"amount":39999,"createdDate":"2025-02-26T00:36:57.131640Z","currency":"ZAR","id":"p_8EDJXWwDPaAU53RCKzefR8yx","metadata":{"checkoutId":"ch_8EjYAWpQKoRIYXTVdNFMBXLa","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":32,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-26 00:39:29 CustomerID: SSSZA25_5P8VM7:
+{"createdDate":"2025-02-26T00:39:28.682045Z","id":"evt_Kx6mKvenJ1of9NwubJ8ir8Kg","payload":{"amount":39999,"createdDate":"2025-02-26T00:39:16.478207Z","currency":"ZAR","id":"p_wxMZmyoRkozs5bAIO6yCK96L","metadata":{"checkoutId":"ch_8EDJXWwYJG6hv2niae6heQDx","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-26 21:07:44 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-26T21:07:43.561082Z","id":"evt_vx5YKeWeXedTlwkI2lOf0mdx","payload":{"amount":1129999,"createdDate":"2025-02-26T21:07:25.061969Z","currency":"ZAR","id":"p_kgKDm2X2y1BsbZ5uMwsKwvxV","metadata":{"checkoutId":"ch_kg9YKn8nQ8wTAAdsDG4sy57g","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-26 21:42:48 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-26T21:42:47.805371Z","id":"evt_kGEZ1RolR1blcByFVW1c52Lw","payload":{"amount":1129999,"createdDate":"2025-02-26T21:42:31.252129Z","currency":"ZAR","id":"p_aEqGk2Ra4X5ioZ8UJmfvY3xD","metadata":{"checkoutId":"ch_DLzArO5GR3Xco1RTb5QUwP5x","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-26 22:57:59 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-26T22:57:58.863623Z","id":"evt_NDLzArOaJnOZHlnipRTN2xa8","payload":{"amount":39999,"createdDate":"2025-02-26T22:57:31.208945Z","currency":"ZAR","id":"p_ngopvlY984MflD6FX7vi5d3x","metadata":{"checkoutId":"ch_21EAwmpW5bB4T6bYh1nIJjxm","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-27 00:06:19 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-27T00:06:18.653672Z","id":"evt_ax4bKoknQkrUwAdIy4ku70qE","payload":{"amount":24999,"createdDate":"2025-02-27T00:06:07.298636Z","currency":"ZAR","id":"p_8EjYAW75vB6HkKBtnjqUMGQL","metadata":{"checkoutId":"ch_4EX8R6dPQJXSwo5tzvjU4NOE","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-27 00:09:58 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-27T00:09:57.466875Z","id":"evt_agJkmd9vv0DcwWmIGp2tQl0x","payload":{"amount":999,"createdDate":"2025-02-27T00:09:45.142548Z","currency":"ZAR","id":"p_wxMZmyrnG48Ck0dfrBiKz7Le","metadata":{"checkoutId":"ch_4EX8R6dWb9VH1nDHB6Oi9qEN","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-27 09:41:24 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-27T09:41:24.068707Z","id":"evt_0Ll1wbANZ0qfGG8TwQXswDEV","payload":{"amount":39999,"createdDate":"2025-02-27T09:40:48.673552Z","currency":"ZAR","id":"p_GEZ1RoPwoj1T9bHVMWuQ4eLw","metadata":{"checkoutId":"ch_QLOBrNPmoWGtXektyZPhyyrx","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-27 12:52:16 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-27T12:52:15.283711Z","id":"evt_kg9YKnklR8KiAyDhrnAtbKg7","payload":{"amount":39999,"createdDate":"2025-02-27T12:51:31.407638Z","currency":"ZAR","id":"p_eLB3ma57Z5YHpKaH8PpIjpEj","metadata":{"checkoutId":"ch_ax4bKoWV0OrTlZ0fyQ6Cn59E","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"type":"instant_eft"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-27 21:29:43 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-27T21:23:42.533150Z","id":"evt_ogkY6pnjey9Uwvbso6qFXpjL","payload":{"amount":2250000,"createdDate":"2025-02-27T21:23:25.175943Z","currency":"ZAR","id":"p_9g0yKqob3NKtYa9UJGOS9yax","metadata":{"checkoutId":"ch_OyL8YKel0RQ2t6Yub8YSpZEa","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-27 21:46:34 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-27T21:15:21.349100Z","id":"evt_QLOBrK4e8rRhX3Zcy0ZIY5Jx","payload":{"amount":2250000,"createdDate":"2025-02-27T21:15:10.878238Z","currency":"ZAR","id":"p_J2xYWR5JAyAef80Fz5bUNJEd","metadata":{"checkoutId":"ch_DLzArmbloYJsJ4vTewwcjOZx","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-02-27 22:54:29 CustomerID: SSSZA25_1A3LTL:
+{"createdDate":"2025-02-27T20:29:54.851770Z","id":"evt_yxvqJma4eqjhw68He2ZHKW8g","payload":{"amount":2250000,"createdDate":"2025-02-27T20:28:30.555224Z","currency":"ZAR","id":"p_eLB3ma7lArGtpjNh8KwtnVRE","metadata":{"checkoutId":"ch_vx5YKepJb1WuopVc7WXt0eDx","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-05 20:38:53 CustomerID: SSSZA25_D2O83X:
+{"createdDate":"2025-03-05T20:38:53.007800Z","id":"evt_ax4bKPba2DkTld3i8YjsnVlE","payload":{"amount":24999,"createdDate":"2025-03-05T20:38:31.378257Z","currency":"ZAR","id":"p_GEZ1R918bQ9sX8YTMdpHvJaL","metadata":{"checkoutId":"ch_kgKDmVDzzMJcbeRiBmGf0Orx","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-06 09:11:06 CustomerID: SSSZA25_D2O83X:
+{"createdDate":"2025-03-06T09:11:05.931787Z","id":"evt_ax4bKP4WoyWFw4vS5plSrGEj","payload":{"amount":39998,"createdDate":"2025-03-06T09:10:51.936996Z","currency":"ZAR","id":"p_PgrMnjVzN2YH0ObiVYqSawZE","metadata":{"checkoutId":"ch_PLmQoYVzkMOIPO3s9RwCMo2L","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-06 11:30:47 CustomerID: SSSZA25_D2O83X:
+{"createdDate":"2025-03-06T11:30:45.761771Z","id":"evt_VgakRrNqK72cNZ9i6Y7c3RLd","payload":{"amount":27499,"createdDate":"2025-03-06T11:30:28.433386Z","currency":"ZAR","id":"p_9Ee7R5KMA9atqX2TBNRtB7kx","metadata":{"checkoutId":"ch_wKx6mK486DRGiMVcMlF3R0g8","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-07 23:08:14 CustomerID: SSSZA25_MLHB3S:
+{"createdDate":"2025-03-07T23:08:13.405991Z","id":"evt_9Ee7R2BJm6NTY64fpWeTrl3x","payload":{"amount":34999,"createdDate":"2025-03-07T23:06:58.185087Z","currency":"ZAR","id":"p_yL8YKB77e2vu5ofb7as4qwEa","metadata":{"checkoutId":"ch_9g0yKY667KGTJ9lf6BYCapWx","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"type":"instant_eft"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-08 10:56:46 CustomerID: SSSZA25_7NTRD9:
+{"createdDate":"2025-03-08T10:56:45.585791Z","id":"evt_4LVK4qlbyd2tBlwcbZJF5rbE","payload":{"amount":19999,"createdDate":"2025-03-08T10:56:31.658509Z","currency":"ZAR","id":"p_PEPbRKlZqjYSpOkTMGHrrox2","metadata":{"checkoutId":"ch_eLB3m7b6J57twBrIlvri3JYE","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-08 10:58:08 CustomerID: SSSZA25_FWXOMR:
+{"createdDate":"2025-03-08T10:58:07.522989Z","id":"evt_vx5YKp813Q3i7XRUj3hnalxb","payload":{"amount":34999,"createdDate":"2025-03-08T10:57:53.120084Z","currency":"ZAR","id":"p_rLQQm9lVVvmCyABI5psPQ1L5","metadata":{"checkoutId":"ch_0Ll1wO294mQclzkSpMmiaaEV","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":32,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-08 11:32:30 CustomerID: SSSZA25_YRLXBK:
+{"createdDate":"2025-03-08T11:32:28.958526Z","id":"evt_Kg7b93myDwPue1MtXz7UjyrE","payload":{"amount":27499,"createdDate":"2025-03-08T11:32:16.752817Z","currency":"ZAR","id":"p_agJkmZKn5v4crkcb6YHQyVx2","metadata":{"checkoutId":"ch_ngopvoY0alQuX6BHQB0cqbvx","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-09 18:29:18 CustomerID: SSSZA25_0S9YEW:
+{"createdDate":"2025-03-09T18:29:18.208046Z","id":"evt_kg9Y8e0vnQeCr83c1j6i4QVg","payload":{"amount":27499,"createdDate":"2025-03-09T18:29:08.526416Z","currency":"ZAR","id":"p_PgrMqlZG8ZjhPo3TVPXFMjNE","metadata":{"checkoutId":"ch_Kx6m8Dyw01OFAvmtXDuj8jg8","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-09 18:44:07 CustomerID: SSSZA25_0S9YEW:
+{"createdDate":"2025-03-09T18:44:06.965667Z","id":"evt_9Ee7Kp6vYJAFDQGhY4Zh4aDx","payload":{"amount":19999,"createdDate":"2025-03-09T18:43:51.178003Z","currency":"ZAR","id":"p_agJkX74bk8ycGPspGPcQqKx2","metadata":{"checkoutId":"ch_3LRQXpWy4JnhQPfyv3UrBMxD","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-09 18:46:47 CustomerID: SSSZA25_0S9YEW:
+{"createdDate":"2025-03-09T18:46:46.807250Z","id":"evt_aEqGbeOO1zziDNnfPDlU1NXx","payload":{"amount":525000,"createdDate":"2025-03-09T18:46:34.662973Z","currency":"ZAR","id":"p_rEy7oXaabVmuy34uYjfraYxK","metadata":{"checkoutId":"ch_8EjYbe00e9pTqM8Frq7c01AL","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-09 18:58:04 CustomerID: SSSZA25_P8ZW71:
+{"createdDate":"2025-03-09T18:58:04.050728Z","id":"evt_QLOBX4vQBJYf0ncG6jiY1wxb","payload":{"amount":12499,"createdDate":"2025-03-09T18:57:53.231313Z","currency":"ZAR","id":"p_yxvqAkwMkyzI7ZQhdAkS3Mog","metadata":{"checkoutId":"ch_4xbqb7563z3SvrUBJkSbP0gy","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-09 19:03:48 CustomerID: SSSZA25_P8ZW71:
+{"createdDate":"2025-03-09T19:03:47.711705Z","id":"evt_yL8Y8lV80o0CNlwu29dfOpEa","payload":{"amount":19999,"createdDate":"2025-03-09T19:03:38.466606Z","currency":"ZAR","id":"p_Kx6m8D98656SAyrsb2vsXKNg","metadata":{"checkoutId":"ch_XEwO6Xo6k5bHqQ2SkeU3GqEK","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-09 19:08:15 CustomerID: SSSZA25_P8ZW71:
+{"createdDate":"2025-03-09T19:08:14.331690Z","id":"evt_yxvqAkwjpvQs7nKCbGWCKRqg","payload":{"amount":19999,"createdDate":"2025-03-09T19:08:04.008603Z","currency":"ZAR","id":"p_Kg7b8Dya0avSn4ou2eyFMWXE","metadata":{"checkoutId":"ch_DLzAebMZY7zTQp2cb4es7z2x","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-03-10 00:19:03 CustomerID: SSSZA25_GCOAQB:
+{"createdDate":"2025-03-10T00:19:02.522376Z","id":"evt_rEy7oXWplaBtY92Udratw1xK","payload":{"amount":7550,"createdDate":"2025-03-10T00:18:51.520183Z","currency":"ZAR","id":"p_agJkX7lKjMqTa8sG9kHXX3x2","metadata":{"checkoutId":"ch_BEd5beva79Xfd3NU7DdFpjkg","domain":"smartstyleshop.bradazinvestments.com","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":30,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-29 17:47:01 CustomerID: MSZA25_VLDD4I:
+{"createdDate":"2025-05-29T17:47:00.281608Z","id":"evt_aEqGb0qa3yyUdYjFo0ASB7xD","payload":{"amount":1380000,"createdDate":"2025-05-29T17:46:50.710264Z","currency":"ZAR","id":"p_ogWYX24wZaMF54RcJPwfpR2L","metadata":{"checkoutId":"ch_8EjYbo4a184cm6tnAYuaO5La","domain":"themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 10:40:25 sellerID: SELLER_70254, Enhancement: :
+{"createdDate":"2025-05-31T10:40:23.587716Z","id":"evt_ogWYX5lVwJ5T5lAUJw7IGY6L","payload":{"amount":500,"createdDate":"2025-05-31T10:39:35.944482Z","currency":"ZAR","id":"p_8EDJ8oM198ZiMa8HYYnheebx","metadata":{"checkoutId":"ch_GEZ1XelYqldTdY8IeVeiQRbL","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 10:47:15 sellerID: SELLER_70254, Enhancement: :
+{"createdDate":"2025-05-31T10:47:14.391926Z","id":"evt_0Ll1RO2zWJwCoanh6mPh14rE","payload":{"amount":500,"createdDate":"2025-05-31T10:47:02.947146Z","currency":"ZAR","id":"p_wxMZXbMDaV3ikm2IDq0fKaNL","metadata":{"checkoutId":"ch_8EDJ8oMAbrRFvz8hBB0IjBnx","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 10:55:58 sellerID: SELLER_70254, Enhancement: :
+{"createdDate":"2025-05-31T10:55:56.732395Z","id":"evt_PLmQr72mvdZiBK0C5dh18ALm","payload":{"amount":500,"createdDate":"2025-05-31T10:54:33.991834Z","currency":"ZAR","id":"p_7x3YWJ3o4dNcYlKie9MTvPkE","metadata":{"checkoutId":"ch_aPLmQr72bvyVTYmf9QKsdNLm","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:07:30 sellerID: SELLER_70254, Enhancement: :
+{"createdDate":"2025-05-31T11:07:28.805809Z","id":"evt_4EX8XAv8ldzHdoswGGSMX9EN","payload":{"amount":500,"createdDate":"2025-05-31T11:07:19.522863Z","currency":"ZAR","id":"p_7x3YWJBYaQpc6PBCYNPSMmqE","metadata":{"checkoutId":"ch_7x3YWJBYNQ7fO39Cep6TmGOE","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:11:09 sellerID: SELLER_70254, Enhancement: 33:
+{"createdDate":"2025-05-31T11:11:08.259888Z","id":"evt_JL2nW09MO5XFd96Tqv6cl3oL","payload":{"amount":500,"createdDate":"2025-05-31T11:10:59.408342Z","currency":"ZAR","id":"p_m4xbqb3ZYXK5s15uB37Tbwgy","metadata":{"checkoutId":"ch_XEwO6WV0ARaSRZKsj2buZyQE","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:12:52 sellerID: SELLER_70254, Enhancement: 2:
+{"createdDate":"2025-05-31T11:12:51.559478Z","id":"evt_4EX8XAvVD91T05fz12cMV8EN","payload":{"amount":500,"createdDate":"2025-05-31T11:12:42.885321Z","currency":"ZAR","id":"p_9g0yWYlpb3jTPMFJmGSzRBxV","metadata":{"checkoutId":"ch_PgrMqDk1Z01UJy0uRbaIaPkE","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:18:01 sellerID: SELLER_70254, Enhancement: 2:
+{"createdDate":"2025-05-31T11:18:00.338158Z","id":"evt_9g0yWYlwqe1TJwKSz7ZTajxV","payload":{"amount":1500,"createdDate":"2025-05-31T11:17:42.435752Z","currency":"ZAR","id":"p_JL2nW09eQ35sArPTDOHq0WLZ","metadata":{"checkoutId":"ch_ngopboYZXDQSdM5tmas58oxB","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:22:27 sellerID: SELLER_70254, Enhancement: 2:
+{"createdDate":"2025-05-31T11:22:26.203586Z","id":"evt_X3LRQXm706KJSAAczIrKAxDP","payload":{"amount":1500,"createdDate":"2025-05-31T11:22:14.568495Z","currency":"ZAR","id":"p_PLmQr7e3Md6HBP3I7NJt1PmL","metadata":{"checkoutId":"ch_QLOBXdqaNqqfXvasyjYSYK5x","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:24:50 sellerID: SELLER_70254, Enhancement: 2:
+{"createdDate":"2025-05-31T11:24:49.659047Z","id":"evt_Kg7b83m4R0aIn5psX2yhJmqE","payload":{"amount":1500,"createdDate":"2025-05-31T11:24:40.432746Z","currency":"ZAR","id":"p_PLmQr7eV4VZuBQYH4oRCRWnL","metadata":{"checkoutId":"ch_GEZ1XeQk2QoI020HM4ZU5ZAL","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:26:45 sellerID: SELLER_70254, Enhancement: 2:
+{"createdDate":"2025-05-31T11:26:44.340946Z","id":"evt_kgKDXaWmJNOsRPuZAvU6nRxV","payload":{"amount":1500,"createdDate":"2025-05-31T11:26:34.988649Z","currency":"ZAR","id":"p_ZogkYbzwa9DoHGYT3vduAdL9","metadata":{"checkoutId":"ch_JL2nW09NwaoideDcd7kTo4OL","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:31:05 sellerID: SELLER_70254, Enhancement: 2:
+{"createdDate":"2025-05-31T11:31:04.286002Z","id":"evt_4xbqb3ZZwV9UalpFzOSbJzgy","payload":{"amount":1500,"createdDate":"2025-05-31T11:30:38.972835Z","currency":"ZAR","id":"p_Kx6m8MB3bP8fXARsb0RF3X0g","metadata":{"checkoutId":"ch_ax4bmVB3aR2IDybInW7INrVE","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 11:57:52 sellerID: SELLER_70254, Enhancement: 13:
+{"createdDate":"2025-05-31T11:57:51.160188Z","id":"evt_yxvqAa1NZPnU0qkh491I33ag","payload":{"amount":500,"createdDate":"2025-05-31T11:57:37.921926Z","currency":"ZAR","id":"p_JL2nW09wayBIdbziYamt9oeL","metadata":{"checkoutId":"ch_0Ll1ROo3zQJFlzKSp02iPQEV","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 12:25:27 sellerID: SELLER_70254, Enhancement: 14:
+{"createdDate":"2025-05-31T12:25:25.805670Z","id":"evt_agJkXZ9wNVyUwl9hOQTQb7x2","payload":{"amount":500,"createdDate":"2025-05-31T12:25:13.786606Z","currency":"ZAR","id":"p_JL2nW0JzVvOtyRXUYyJSq0aL","metadata":{"checkoutId":"ch_y0Ll1RO6eWWWhw8I05iPMWEV","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 12:42:52 sellerID: SELLER_70254, Enhancement: 16:
+{"createdDate":"2025-05-31T12:42:50.726325Z","id":"evt_1gGJPD9apvrCnAafKo4S9PED","payload":{"amount":1000,"createdDate":"2025-05-31T12:42:40.104517Z","currency":"ZAR","id":"p_M9Ee7K2yWy4pfVwfNDtB2WxD","metadata":{"checkoutId":"ch_ngopboe6Y9aiX6ZHPWWcpmxB","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 12:44:33 sellerID: SELLER_70254, Enhancement: 17:
+{"createdDate":"2025-05-31T12:44:32.748951Z","id":"evt_3LRQXmd5Y1QFQWAt0laHzZxD","payload":{"amount":500,"createdDate":"2025-05-31T12:44:17.859748Z","currency":"ZAR","id":"p_rLQQX9dOnw6ib64uQOkfPKZL","metadata":{"checkoutId":"ch_2xYWXwdvvazSz4QTDmnuPN0E","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 14:00:57 sellerID: SELLER_70254, Enhancement: 18:
+{"createdDate":"2025-05-31T14:00:55.891817Z","id":"evt_vx5YWpG65lKUrjYs20kIwNMx","payload":{"amount":500,"createdDate":"2025-05-31T14:00:45.636254Z","currency":"ZAR","id":"p_2xYWXwr5dbNi53uDKrtZzjEd","metadata":{"checkoutId":"ch_9g0yWYGqlZdtJnU6jKC9RmxV","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 14:10:24 changePSellerID: SELLER_70254:
+{"createdDate":"2025-05-31T14:10:22.833764Z","id":"evt_BEd5blw7vB2IGRpUb4tWeRgo","payload":{"amount":35000,"createdDate":"2025-05-31T14:10:07.028112Z","currency":"ZAR","id":"p_b8EDJ8oraJ7OIeDTQlhMNlxO","metadata":{"checkoutId":"ch_kGEZ1Xe2KyJKtvqfYp2HJKLw","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":11,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 23:36:08 sellerID: SELLER_70254, Enhancement: 4:
+{"createdDate":"2025-05-31T23:35:59.759512Z","id":"evt_rEy7oGmJ03YfYdGfPwkseo0x","payload":{"amount":11000,"createdDate":"2025-05-31T23:35:05.952441Z","currency":"ZAR","id":"p_ZgnMb6mqn5YsZznTqyZHDN1E","metadata":{"checkoutId":"ch_2xYWXw39nPqizA2TyarfZkYE","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":2,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+
+Received at 2025-05-31 23:38:32 changePSellerID: SELLER_70254:
+{"createdDate":"2025-05-31T23:38:30.753857Z","id":"evt_m4xbqb39DlKkS7WFBaXH6gyj","payload":{"amount":35000,"createdDate":"2025-05-31T23:38:21.460251Z","currency":"ZAR","id":"p_1EAw8OqnD9bu2YGCynfwkwxm","metadata":{"checkoutId":"ch_2LNQXGD7MDYTXn9t2ohQkaxP","domain":"seller.themzansimarketplace.co.za","productType":"checkout"},"mode":"test","paymentMethodDetails":{"card":{"expiryMonth":2,"expiryYear":29,"maskedCard":"************1111","scheme":"visa"},"type":"card"},"status":"succeeded","type":"payment"},"type":"payment.succeeded"}
+

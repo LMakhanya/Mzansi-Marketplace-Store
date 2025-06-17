@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/themzansi_logo.png" />
+    <title>Legal - Mzansi Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/tailwind.css">
+    <link rel="stylesheet" href="/styles/output.css">
+    <style>
+        .content-expanded {
+            margin-left: 16rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-expanded {
+                margin-left: 0;
+            }
+        }
+
+        .tab.active {
+            background-color: #F97316;
+            color: white;
+        }
+
+        .tab:hover {
+            background-color: #ED8936;
+            color: white;
+        }
+
+        /* Offset for anchor links to account for sticky header */
+        .tab-content,
+        [id^="seller-"],
+        [id^="buyer-"],
+        [id="data-rights"],
+        [id="contact"] {
+            scroll-margin-top: 96px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans flex max-h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white h-screen fixed top-0 left-0 overflow-y-auto hidden md:block">
+        <div class="p-6">
+            <h2 class="text-2xl font-bold">Mzansi Marketplace</h2>
+        </div>
+        <nav class="mt-4">
+            <a href="#terms-conditions" class="block px-6 py-3 hover:bg-gray-700 tab active" data-tab="terms-conditions"
+                role="tab" aria-selected="true"><i class="fas fa-file-alt mr-2"></i> Terms & Conditions</a>
+            <a href="#privacy-policy" class="block px-6 py-3 hover:bg-gray-700 tab" data-tab="privacy-policy" role="tab"
+                aria-selected="false"><i class="fas fa-shield-alt mr-2"></i> Privacy Policy</a>
+            <a href="#customer-agreement" class="block px-6 py-3 hover:bg-gray-700 tab" data-tab="customer-agreement"
+                role="tab" aria-selected="false"><i class="fas fa-handshake mr-2"></i> Customer Agreement</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div id="main-content" class="overflow-y-auto flex-1 content-expanded">
+        <!-- Top Navigation -->
+        <header class="bg-white shadow-sm sticky top-0">
+            <div class="flex justify-between items-center px-6 py-4">
+                <div class="flex gap-x-3 items-center">
+                    <button class="toggle-sm-sidebar block md:hidden text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 class="text-xl font-bold text-gray-900">Legal - Mzansi Marketplace</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-bell"></i>
+                        <span class="sr-only">Notifications</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-container flex justify-center p-4 bg-white border-b border-gray-200">
+            <input type="text" id="searchBar" placeholder="Search legal topics (e.g., 'returns', 'privacy')..."
+                class="w-full max-w-md p-2 border border-gray-300 rounded-md" aria-label="Search legal topics">
+        </div>
+
+        <!-- Main Content -->
+        <main class="p-2 md:p-6">
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <div class="px-6 py-4 border-b border-gray-200">
+                    <h2 class="text-lg font-medium text-gray-900">Legal Information</h2>
+                </div>
+                <div class="p-6">
+                    <!-- No Results Message -->
+                    <div id="no-results" class="hidden bg-orange-50 rounded-lg p-4 text-sm text-orange-900">
+                        <p>No results found. Try a different search term (e.g., 'refunds', 'data rights').</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="mb-4">
+                        <h3 class="text-sm font-medium text-gray-900">Quick Links</h3>
+                        <ul class="flex flex-wrap gap-4 text-sm text-orange-700">
+                            <li><a href="#seller-terms" class="underline hover:text-orange-900">Seller Terms</a></li>
+                            <li><a href="#buyer-terms" class="underline hover:text-orange-900">Buyer Terms</a></li>
+                            <li><a href="#data-rights" class="underline hover:text-orange-900">Your Data Rights</a></li>
+                            <li><a href="#contact" class="underline hover:text-orange-900">Contact Support</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <section id="terms-conditions" class="tab-content">
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Terms & Conditions</h3>
+                        <div class="space-y-4 text-sm text-gray-600">
+                            <p data-searchable>By using Mzansi Marketplace ("Platform"), you agree to these Terms &
+                                Conditions, a legally binding contract. These govern your activities as a buyer or
+                                seller, ensuring compliance with South African laws, including the <strong>Consumer
+                                    Protection Act (CPA)</strong>, <strong>Electronic Communications and Transactions
+                                    Act (ECTA)</strong>, and <strong>Protection of Personal Information Act
+                                    (POPIA)</strong>.</p>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">1. General Rules</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Be 18+ to register and transact.</li>
+                                    <li>Keep account details (e.g., password) confidential; report unauthorized access.
+                                    </li>
+                                    <li>We may suspend accounts for violations or refuse service at our discretion.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" id="seller-terms" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">2. Seller Terms</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Provide accurate business details during registration.</li>
+                                    <li>Ensure listings comply with CPA (e.g., accurate descriptions, safe products).
+                                    </li>
+                                    <li>Handle returns and disputes per ECTA and Platform policies.</li>
+                                    <li>Link a bank account for Yoco payouts; fees apply per your plan.</li>
+                                    <li>You’re responsible for order fulfillment; we’re an intermediary.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" id="buyer-terms" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">3. Buyer Terms</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Provide valid payment and delivery details.</li>
+                                    <li>Review seller return policies (CPA-compliant) before buying.</li>
+                                    <li>Inspect products on delivery; report issues promptly.</li>
+                                    <li>Resolve disputes with sellers first; escalate to us if needed.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">4. Payments</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Processed securely via Yoco; funds held until payout or refund.</li>
+                                    <li>Refunds follow seller policies and CPA rules.</li>
+                                    <li>We assist in disputes but aren’t liable for resolutions.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">5. Other Terms</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>We’re not liable for transaction disputes or damages, except where required by
+                                        law.</li>
+                                    <li>Users indemnify us against claims from their actions.</li>
+                                    <li>Terms may change; we’ll notify you via email (effective after 30 days).</li>
+                                    <li>Disputes resolved via mediation/arbitration per AFSA rules.</li>
+                                    <li>Governed by South African law.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Privacy Policy -->
+                    <section id="privacy-policy" class="tab-content hidden">
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Privacy Policy</h3>
+                        <div class="space-y-4 text-sm text-gray-600">
+                            <p data-searchable>We protect your privacy under POPIA. This policy explains how we handle
+                                your data as a buyer, seller, or visitor. Last updated: <strong>June 5, 2025</strong>.
+                            </p>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">1. What We Collect</h4>
+                                <ul class="list-disc ml-5">
+                                    <li><strong>Personal Info</strong>: Name, email, phone, address, payment details,
+                                        seller ID/selfie.</li>
+                                    <li><strong>Transactions</strong>: Order history, payments, seller communications.
+                                    </li>
+                                    <li><strong>Usage</strong>: IP address, browser, clicks, via cookies and logs.</li>
+                                    <li><strong>Guest Buyers</strong>: Phone/email for order tracking.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" id="data-rights" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">2. Your Data Rights</h4>
+                                <ul class="list-disc ml-5">
+                                    <li><strong>Access</strong>: Request a copy of your data.</li>
+                                    <li><strong>Correct</strong>: Update inaccurate info.</li>
+                                    <li><strong>Delete</strong>: Request data removal (subject to legal retention).</li>
+                                    <li><strong>Object</strong>: Opt out of marketing uses.</li>
+                                    <li><strong>Portability</strong>: Get your data in a transferable format.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">3. How We Use & Share Data</h4>
+                                <ul class="list-disc ml-5">
+                                    <li><strong>Use</strong>: Process orders, manage accounts, improve services, comply
+                                        with laws.</li>
+                                    <li><strong>Share</strong>: With sellers (for delivery), Yoco (payments), or as
+                                        legally required.</li>
+                                    <li>We don’t sell or rent your data or use it for automated decisions.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">4. Data Security & Retention</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Protected with encryption and audits; breaches reported per POPIA.</li>
+                                    <li>Retained only as needed (e.g., accounts: 5 years post-closure; transactions: 7
+                                        years).</li>
+                                    <li>Deleted/anonymized within 30 days of termination, unless legally required.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">5. Cookies</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Used for login, analytics; disable via browser settings (may limit
+                                        functionality).</li>
+                                    <li>First-party cookies enhance experience; third-party cookies for analytics.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Customer Agreement -->
+                    <section id="customer-agreement" class="tab-content hidden">
+                        <h3 class="text-md font-medium text-gray-700 mb-4">Customer Agreement</h3>
+                        <div class="space-y-4 text-sm text-gray-600">
+                            <p data-searchable>This agreement governs buyers on Mzansi Marketplace, forming a legally
+                                binding contract under CPA, ECTA, and POPIA.</p>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">1. Buying on the Platform</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Be 18+ to purchase.</li>
+                                    <li>Provide accurate payment and delivery details.</li>
+                                    <li>Review seller terms (CPA-compliant) before buying.</li>
+                                    <li>We’re an intermediary, not responsible for product quality or delivery.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">2. Payments & Refunds</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Payments via Yoco; we hold funds until payout or refund.</li>
+                                    <li>Refunds per seller’s CPA-compliant policies.</li>
+                                    <li>Fraudulent chargebacks may lead to suspension.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">3. Disputes & Termination</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>Resolve issues with sellers first; escalate to us within 5 days.</li>
+                                    <li>We may terminate accounts for violations (e.g., fraud).</li>
+                                    <li>You can close your account via support, settling pending orders.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-4" data-searchable>
+                                <h4 class="text-sm font-medium text-orange-900 mb-2">4. Other Terms</h4>
+                                <ul class="list-disc ml-5">
+                                    <li>We’re not liable for purchase disputes, except where required by law.</li>
+                                    <li>Terms may change (notified via email, effective after 30 days).</li>
+                                    <li>Governed by South African law.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Calculate header height dynamically
+            const header = document.querySelector('header');
+            const getHeaderHeight = () => {
+                const style = window.getComputedStyle(header);
+                return parseFloat(style.height) + parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+            };
+
+            // Tab Switching
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    tabs.forEach(t => {
+                        t.classList.remove('active');
+                        t.setAttribute('aria-selected', 'false');
+                    });
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                        content.querySelectorAll('[data-searchable]').forEach(item => item.classList.remove('hidden'));
+                    });
+
+                    tab.classList.add('active');
+                    tab.setAttribute('aria-selected', 'true');
+                    const targetSection = document.getElementById(tab.dataset.tab);
+                    targetSection.classList.remove('hidden');
+
+                    // Smooth scroll with header offset
+                    setTimeout(() => {
+                        const headerHeight = getHeaderHeight();
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        window.scrollBy(0, -headerHeight);
+                    }, 0);
+                });
+            });
+
+            // Quick Links Scroll Handling
+            const quickLinks = document.querySelectorAll('a[href^="#"]');
+            quickLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        // Show parent section if hidden
+                        const parentSection = targetElement.closest('.tab-content');
+                        if (parentSection) {
+                            tabContents.forEach(content => content.classList.add('hidden'));
+                            parentSection.classList.remove('hidden');
+                            tabs.forEach(t => {
+                                t.classList.toggle('active', t.dataset.tab === parentSection.id);
+                                t.setAttribute('aria-selected', t.dataset.tab === parentSection.id ? 'true' : 'false');
+                            });
+                        }
+                        // Smooth scroll
+                        setTimeout(() => {
+                            const headerHeight = getHeaderHeight();
+                            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            window.scrollBy(0, -headerHeight);
+                        }, 0);
+                    }
+                });
+            });
+
+            // Search Functionality
+            const searchBar = document.getElementById('searchBar');
+            const noResults = document.getElementById('no-results');
+            searchBar.addEventListener('input', () => {
+                const query = searchBar.value.toLowerCase().trim();
+                let hasMatches = false;
+
+                // Hide all sections and no-results message initially
+                tabContents.forEach(section => section.classList.add('hidden'));
+                noResults.classList.add('hidden');
+
+                if (query) {
+                    tabContents.forEach(section => {
+                        let sectionHasMatch = false;
+                        const searchableItems = section.querySelectorAll('[data-searchable]');
+                        searchableItems.forEach(item => {
+                            const text = item.textContent.toLowerCase();
+                            const matches = text.includes(query);
+                            item.classList.toggle('hidden', !matches);
+                            if (matches) {
+                                sectionHasMatch = true;
+                                hasMatches = true;
+                            }
+                        });
+                        // Show section if it has matches
+                        if (sectionHasMatch) {
+                            section.classList.remove('hidden');
+                        }
+                    });
+
+                    // Show no-results message if no matches
+                    if (!hasMatches) {
+                        noResults.classList.remove('hidden');
+                    }
+                } else {
+                    // Show default section (Terms & Conditions) when query is empty
+                    document.getElementById('terms-conditions').classList.remove('hidden');
+                    tabContents.forEach(section => {
+                        section.querySelectorAll('[data-searchable]').forEach(item => item.classList.remove('hidden'));
+                    });
+                    tabs.forEach(t => {
+                        t.classList.toggle('active', t.dataset.tab === 'terms-conditions');
+                        t.setAttribute('aria-selected', t.dataset.tab === 'terms-conditions' ? 'true' : 'false');
+                    });
+                }
+            });
+
+            // Sidebar Toggle for Mobile
+            const sidebarToggle = document.querySelector('.toggle-sm-sidebar');
+            const mainContent = document.querySelector('#main-content');
+            const sidebar = document.querySelector('aside');
+            if (sidebarToggle) {
+                sidebarToggle.addEventListener('click', () => {
+                    sidebar.classList.toggle('hidden');
+                    mainContent.classList.toggle('content-expanded');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

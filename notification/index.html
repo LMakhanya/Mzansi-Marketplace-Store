@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        label, input, textarea, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Create Notification</h1>
+    <form action="save_notification.php" method="POST">
+        <label for="title">Notification Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter title" required>
+        
+        <label for="message">Notification Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter message" required></textarea>
+        
+        <button type="submit">Save Notification</button>
+    </form>
+</body>
+</html>

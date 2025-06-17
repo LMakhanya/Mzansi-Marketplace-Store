@@ -1,0 +1,390 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import "tailwindcss";
+
+:root {
+    --base-clr: #f1faffeb;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #808080;
+    --primary-color: #e67e22;
+    --text-color: #333;
+    --sec-text-color: #282727;
+    --bg-color-light: #d5d5d5;
+    --bg-color-dark: #11121a;
+    --border-color: #e68835;
+    --footer-bg: #333;
+    --footer-text-color: var(--white);
+    --bg-color: white;
+    --hover-color: #cf792d;
+    --white: white;
+    --black: black;
+
+    --btn_blue: #2b92af;
+    --red: #f13333;
+    --green: #2baf64;
+    --blue: #3b82f6;
+    --yellow: #f5c231;
+
+    --icon-color-light: white;
+    --icon-color-light-dark: white;
+
+    --color-light-dark: white;
+    --color-dark-light: #11121a;
+
+    --shadow: rgba(0, 0, 0, 0.1);
+
+    --hightlighter-color: #efefef;
+
+    /* Darker, richer blue for professionalism */
+    --secondary-color: #00aaff;
+    /* Brighter, modern accent blue */
+    --accent-color: #f8fafc;
+    /* Softer off-white for backgrounds */
+    --text-color: #2d3748;
+    /* Softer black for readability */
+    --error-color: #f56565;
+    /* Softer red for errors */
+    --success-color: #48bb78;
+    /* Modern green for success */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Modern font stack */
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #e2e8f0 0%, #edf2f7 100%);
+    /* Subtle gradient */
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: var(--white);
+    padding: 1rem 0;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .nav-container {
+        padding: 0 20px;
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            padding: 15px;
+            cursor: pointer;
+            /*   height: 60px; */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+                inset 0px 2px 5px rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            background-color: var(--primary-color);
+            height: auto;
+            width: 80px;
+        }
+    }
+
+    .reg-logout {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: var(--blue);
+        cursor: pointer;
+
+        p {
+            color: inherit;
+            text-decoration: none;
+            font-size: .85rem;
+        }
+
+        i {
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+    }
+
+}
+
+/* Style the input containers */
+.combo_field {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    .form-group {
+        width: 100%;
+    }
+}
+
+.form-group {
+    position: relative;
+}
+
+.no-mb {
+    margin-bottom: 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 12px 12px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: border-color 0.3s ease;
+    padding-top: 25px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(246, 159, 59, 0.1);
+}
+
+.form-group label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    font-size: 12px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding: 0 4px;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label {
+    top: 2px;
+    font-size: 11px;
+    color: #b1b1b1;
+    transform: translateY(0%);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    font-style: italic;
+    color: gray;
+    font-size: 0.65rem;
+    opacity: 0;
+}
+
+/* Ensure placeholder remains visible when input is focused */
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    opacity: 1;
+}
+
+
+/* Radio Buttons */
+.radio-form-group {
+    margin-bottom: 20px;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Custom radio button inner circle */
+.radio-group input[type="radio"]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
+}
+
+/* Active radio button effect */
+.radio-group input[type="radio"]:checked {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 6px rgba(246, 181, 59, 0.5);
+}
+
+.radio-group input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
+
+/* Overlay Styles */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.modal .warning-icon {
+    font-size: 40px;
+    color: #f59e0b;
+    margin-bottom: 15px;
+}
+
+.modal h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.modal p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.modal .btn-leave {
+    display: block;
+    padding: 10px 20px;
+    background: #1e293b;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 auto 10px;
+    border: 2px solid #3b82f6;
+}
+
+.modal .btn-cancel {
+    display: block;
+    font-size: 14px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.modal .btn-cancel:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+
+        .nav-container {
+            padding: 0 5px;
+        }
+
+        .reg-logout {
+
+            p {
+                font-size: .8rem;
+            }
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .modal {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .modal h2 {
+        font-size: 18px;
+    }
+
+    .modal p {
+        font-size: 12px;
+    }
+
+    .modal .btn-leave {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .modal .btn-cancel {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,195 @@
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+}
+
+.main-body-content {
+    display: flex;
+    justify-content: center;
+    /*     align-items: center; */
+}
+
+.main-body-content.login {
+    height: 100%;
+}
+
+.container {
+    background: white;
+    padding: 20px 40px;
+    flex: 1;
+    height: fit-content;
+    width: 100%;
+    max-width: 650px;
+    gap: 15px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #1f2937;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.header p {
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+.reg-mmssg-display {
+    display: flex;
+    color: var(--text-color);
+    width: fit-content;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: auto;
+    gap: 5px;
+
+    a {
+        color: var(--blue);
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: .7rem;
+        flex: 1;
+    }
+
+    i {
+        font-size: 25px;
+        color: var(--text-color);
+    }
+
+}
+
+.reg-mmssg-display.error {
+    align-items: center;
+
+    i {
+        color: var(--red);
+    }
+}
+
+.reg-mmssg-display.success {
+
+    i {
+        color: var(--green);
+    }
+}
+
+.reg-mmssg-display.info {
+
+    i {
+        color: var(--yellow);
+    }
+}
+
+
+.strength-bar {
+    height: 4px;
+    width: 0;
+    background: #ef4444;
+    border-radius: 2px;
+    margin-top: 8px;
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.match-message,
+.password-length-message {
+    font-size: .8rem;
+    margin-top: 0px;
+    display: none;
+}
+
+.match-message.success {
+    color: #22c55e;
+    display: block;
+}
+
+.match-message.error,
+.password-length-message.error {
+    color: #ef4444;
+    display: block;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--hover-color);
+}
+
+.terms {
+    text-align: center;
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: .7rem;
+}
+
+.terms a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Adding new styles for checkbox and login link */
+.checkbox-group {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6b7280;
+    font-size: .8rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.login-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0px;
+        padding: 15px;
+    }
+}

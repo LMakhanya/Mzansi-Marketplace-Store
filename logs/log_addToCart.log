@@ -1,0 +1,113 @@
+2025-05-26 07:22 - Cart file found
+2025-05-26 07:22 - New customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:22 - New customer - generated quantity: 1
+2025-05-26 07:22 - Record inserted successfully in bagtbl
+2025-05-26 07:22 - Cart file found
+2025-05-26 07:22 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:22 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:22 - customer - generated quantity: 1
+2025-05-26 07:22 - customer - generated currentQ: 1
+2025-05-26 07:22 - Product quantity updated successfully in bagtbl
+2025-05-26 07:26 - Cart file found
+2025-05-26 07:26 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:26 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:26 - customer - generated quantity: 1
+2025-05-26 07:26 - customer - generated currentQ: 2
+2025-05-26 07:26 - Product quantity updated successfully in bagtbl
+2025-05-26 07:26 - Cart file found
+2025-05-26 07:26 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:26 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:26 - customer - generated quantity: 1
+2025-05-26 07:26 - customer - generated currentQ: 3
+2025-05-26 07:26 - Product quantity updated successfully in bagtbl
+2025-05-26 07:26 - Cart file found
+2025-05-26 07:26 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:26 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:26 - customer - generated quantity: 1
+2025-05-26 07:26 - customer - generated currentQ: 4
+2025-05-26 07:26 - Product quantity updated successfully in bagtbl
+2025-05-26 07:26 - Cart file found
+2025-05-26 07:26 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:26 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:26 - customer - generated quantity: 1
+2025-05-26 07:26 - customer - generated currentQ: 5
+2025-05-26 07:26 - Product quantity updated successfully in bagtbl
+2025-05-26 07:26 - Cart file found
+2025-05-26 07:26 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:26 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:26 - customer - generated quantity: 1
+2025-05-26 07:26 - customer - generated currentQ: 6
+2025-05-26 07:26 - Product quantity updated successfully in bagtbl
+2025-05-26 07:32 - Cart file found
+2025-05-26 07:32 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:32 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:32 - customer - generated quantity: 1
+2025-05-26 07:32 - customer - generated currentQ: 7
+2025-05-26 07:32 - Binding: newQuantity=8, totalAmountBag=110000, bagID=M8VWZWSCBG, pID=54, customerID=MSZA25_W6V963, size=, sellerID=SELLER_70254
+2025-05-26 07:32 - Product quantity updated successfully in bagtbl
+2025-05-26 07:34 - Cart file found
+2025-05-26 07:34 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:34 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:34 - customer - generated quantity: 1
+2025-05-26 07:34 - customer - generated currentQ: 8
+2025-05-26 07:35 - Cart file found
+2025-05-26 07:35 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:35 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:35 - customer - generated quantity: 1
+2025-05-26 07:35 - customer - generated currentQ: 8
+2025-05-26 07:35 - Cart file found
+2025-05-26 07:35 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:35 - customer - generated bagID: M8VWZWSCBG
+2025-05-26 07:35 - customer - generated quantity: 1
+2025-05-26 07:35 - customer - generated currentQ: 8
+2025-05-26 07:35 - Binding: newQuantity=9, totalAmountBag=123750, bagID=M8VWZWSCBG, pID=54, customerID=MSZA25_W6V963, size=, sellerID=SELLER_70254
+2025-05-26 07:35 - Product quantity updated successfully in bagtbl
+2025-05-26 07:40 - Cart file found
+2025-05-26 07:40 - New customer - generated bagID: PDH3E06RIZ
+2025-05-26 07:40 - New customer - generated quantity: 1
+2025-05-26 07:40 - Record inserted successfully in bagtbl
+2025-05-26 07:40 - Cart file found
+2025-05-26 07:40 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:40 - customer - generated bagID: PDH3E06RIZ
+2025-05-26 07:40 - customer - generated quantity: 1
+2025-05-26 07:40 - customer - generated currentQ: 1
+2025-05-26 07:40 - Binding: newQuantity=2, totalAmountBag=27500, bagID=PDH3E06RIZ, pID=54, customerID=MSZA25_W6V963, size=, sellerID=SELLER_70254
+2025-05-26 07:40 - Product quantity updated successfully in bagtbl
+2025-05-26 07:41 - Cart file found
+2025-05-26 07:41 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:41 - customer - generated bagID: PDH3E06RIZ
+2025-05-26 07:41 - customer - generated quantity: 1
+2025-05-26 07:41 - Record inserted successfully in bagtbl
+2025-05-26 07:41 - Cart file found
+2025-05-26 07:41 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-05-26 07:41 - customer - generated bagID: PDH3E06RIZ
+2025-05-26 07:41 - customer - generated quantity: 1
+2025-05-26 07:41 - customer - generated currentQ: 1
+2025-05-26 07:41 - Product quantity updated successfully in bagtbl
+2025-05-26 07:54 - Cart file found
+2025-05-26 07:54 - New customer - generated bagID: 1G14IQJC48
+2025-05-26 07:54 - New customer - generated quantity: 1
+2025-05-26 07:54 - Record inserted successfully in bagtbl
+2025-06-03 22:06 - Cart file found
+2025-06-03 22:06 - New customer - generated bagID: MH5663CIMK
+2025-06-03 22:06 - New customer - generated quantity: 1
+2025-06-03 22:06 - Record inserted successfully in bagtbl
+2025-06-03 22:59 - Cart file found
+2025-06-03 22:59 - 
+Existing customer - customerID: MSZA25_W6V963 whith sellerID: SELLER_70254
+2025-06-03 22:59 - customer - generated bagID: MH5663CIMK
+2025-06-03 22:59 - customer - generated quantity: 1
+2025-06-03 22:59 - Record inserted successfully in bagtbl
